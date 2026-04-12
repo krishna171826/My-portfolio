@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@keyframes starPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: scale(1.8);
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+}
