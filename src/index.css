@@ -13,6 +13,90 @@
   }
 }
 
+@keyframes shootingStar {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scaleX(0.9);
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--dx), var(--dy), 0) scaleX(1.15);
+  }
+}
+
+@keyframes driftStar {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(calc(var(--dx) * 0.5), calc(var(--dy) * 0.5), 0) scale(var(--scale));
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--dx), var(--dy), 0) scale(0.92);
+  }
+}
+
+@keyframes silverFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 220% 50%;
+  }
+}
+
+@keyframes avatarFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes waterfallFlow {
+  0% {
+    opacity: 0.8;
+    background-position: 50% 0%;
+    box-shadow: 0 0 12px rgba(125, 211, 252, 0.18), 0 0 24px rgba(56, 189, 248, 0.12);
+  }
+
+  50% {
+    opacity: 1;
+    background-position: 50% 100%;
+    box-shadow: 0 0 18px rgba(186, 230, 253, 0.38), 0 0 34px rgba(56, 189, 248, 0.3);
+  }
+
+  100% {
+    opacity: 0.8;
+    background-position: 50% 0%;
+    box-shadow: 0 0 12px rgba(125, 211, 252, 0.18), 0 0 24px rgba(56, 189, 248, 0.12);
+  }
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b0b10 0%, #030306 100%);
+}
+
+html,
+#root {
+  min-height: 100%;
 }

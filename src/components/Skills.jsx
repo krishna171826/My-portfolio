@@ -1,0 +1,29 @@
+export function Skills({ items, index = '01' }) {
+  return (
+    <section className="text-center">
+      <div className="flex items-center justify-center gap-4">
+        <span className="font-mono text-xs tracking-[0.28em] text-zinc-400">{index}</span>
+        <div className="h-px w-24 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-32" />
+      </div>
+
+      <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+        <span className="text-white">Professional </span>
+        <span className="text-slate-300">Skillset</span>
+      </h2>
+
+      <ul className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-4 sm:gap-6">
+        {items.map((item) => (
+          <li
+            key={item}
+            className="flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-base text-zinc-100 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-md transition duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10 sm:px-5"
+          >
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-white/10 text-xs font-semibold text-slate-200">
+              {item.slice(0, 2).toUpperCase()}
+            </span>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
