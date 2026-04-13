@@ -14,13 +14,17 @@ export function Skills({ items, index = '01' }) {
       <ul className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-4 sm:gap-6">
         {items.map((item) => (
           <li
-            key={item}
+            key={typeof item === 'string' ? item : item.name}
             className="flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-base text-zinc-100 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-md transition duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10 sm:px-5"
           >
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-white/10 text-xs font-semibold text-slate-200">
-              {item.slice(0, 2).toUpperCase()}
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-white/90 p-1">
+              {typeof item === 'string' ? (
+                <span className="text-xs font-semibold text-zinc-900">{item.slice(0, 2).toUpperCase()}</span>
+              ) : (
+                <img src={item.icon} alt={`${item.name} logo`} className="h-4 w-4 object-contain" loading="lazy" />
+              )}
             </span>
-            {item}
+            {typeof item === 'string' ? item : item.name}
           </li>
         ))}
       </ul>
