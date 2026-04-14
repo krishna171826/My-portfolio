@@ -9,7 +9,7 @@ export default function Home() {
       <StarfieldBackground />
 
       <section className="relative z-10 mx-auto flex min-h-screen  flex-col items-center justify-center gap-6 px-5 text-center ">
-        <h1 className="text-balance text-3xl font-semibold text-white/90 sm:text-4xl md:text-5xl">
+        <h1 className="text-balance text-3xl font-semibold text-white/90 sm:text-4xl pt-35  md:text-5xl md:pt-10">
           Salut, Je suis{' '}
           <span className="inline-block bg-linear-to-r from-zinc-200 via-slate-300 to-zinc-500 bg-size-[220%_100%] bg-clip-text font-extrabold tracking-wide text-transparent drop-shadow-[0_0_20px_rgba(226,232,240,0.35)] animate-[silverFlow_7s_linear_infinite]">
             SURESH Gopi
@@ -18,7 +18,7 @@ export default function Home() {
 
         <section
           id="about"
-          className="w-full max-w-5xl pt-20 text-left"
+          className="w-full max-w-5xl pt-20 text-left "
         >
           <div className=" items-center ">
            
