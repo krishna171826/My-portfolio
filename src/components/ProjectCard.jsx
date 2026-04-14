@@ -50,7 +50,7 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, com
               {competences.map((item) => (
                 <li
                   key={`${title}-competence-${item}`}
-                  className="rounded-full border border-white/15 bg-white/6 px-3 py-1 text-[11px] text-zinc-200"
+                  className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
                 >
                   {item}
                 </li>
@@ -64,7 +64,7 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, com
               {tools.map((item) => (
                 <li
                   key={`${title}-tool-${item}`}
-                  className="rounded-full border border-white/15 bg-white/6 px-3 py-1 text-[11px] text-zinc-200"
+                  className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
                 >
                   {item}
                 </li>

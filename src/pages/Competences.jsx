@@ -27,7 +27,12 @@ const languagesAndFrameworks = [
         name: 'Express.js',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
         tags: ['Web Framework', 'API', 'Middleware']
-      }
+      },
+      {
+        name: 'Socket.io',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
+        tags: ['Realtime', 'WebSockets', 'Events']  
+      },
     ]
   },
   {
@@ -57,6 +62,11 @@ const languagesAndFrameworks = [
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
         tags: ['Microframework', 'Lightweight', 'API']
       },
+      {
+        name: 'Jinja',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        tags: ['Templating', 'Server-side Rendering', 'Python-based']
+      }
     ]
   },
   {
@@ -96,7 +106,17 @@ const languagesAndFrameworks = [
         name: 'HTML5 & CSS3',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
         tags: ['Semantic', 'Standards', 'Responsive']
-      }
+      },
+      { 
+        name: 'Bootstrap',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+        tags: ['CSS Framework', 'Responsive', 'Components']
+      },
+      {
+        name: 'Shadcn UI',
+        icon: 'https://shadcn.com/favicon-96x96.png',
+        tags: ['Component Library', 'Tailwind-based', 'Accessible'] 
+      },
     ]
   },
   {
@@ -115,7 +135,37 @@ const languagesAndFrameworks = [
         tags: ['Classes', 'Heritage', 'Polymorphism']
       }
     ]
-  }
+  },
+  {
+    language: 'PHP',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    description: 'Langage de programmation pour le développement backend',
+    frameworks: [
+      {
+        name: 'Symfony',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg',
+        tags: ['Framework', 'MVC', 'Enterprise']
+      },
+      {
+        name: 'Laravel',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
+        tags: ['Framework', 'MVC', 'Web Applications']
+      }
+    ]
+  },
+  {
+    language: 'Application Mobile',
+    icon: 'https://cdn.simpleicons.org/android/3DDC84',
+    description: "Développement d'applications mobiles Android",
+    frameworks: [
+      {
+        name: 'Android',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
+        tags: ['Mobile', 'UI', 'Development']
+      },
+    ]
+  },
+
 ]
 
 const tools = [
@@ -147,7 +197,25 @@ const tools = [
     name: 'Docker', 
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   },
+  {
+    name: 'Android Studio',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
+  },
+  {
+    name: 'Arduino IDE',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',    
+  },
+  { 
+    name: 'SolidWorks', 
+    icon: 'https://img.icons8.com/color/96/solidworks.png',
+  },
+  {
+    name: 'Bash',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',  
+  }
+
 ]
+
 
 export default function Competences() {
   return (
