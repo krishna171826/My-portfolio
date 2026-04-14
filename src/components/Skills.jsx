@@ -11,23 +11,47 @@ export function Skills({ items, index = '01' }) {
         <span className="text-slate-300">Skillset</span>
       </h2>
 
-      <ul className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-4 sm:gap-6">
-        {items.map((item) => (
-          <li
-            key={typeof item === 'string' ? item : item.name}
-            className="flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-base text-zinc-100 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-md transition duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10 sm:px-5"
+      <div className="mx-auto mt-12 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
+        {items.map((item, idx) => (
+          <div
+            key={idx}
+            className="group relative rounded-3xl border border-white/10 bg-linear-to-br from-white/8 to-white/3 p-8 backdrop-blur-md transition duration-300 hover:border-white/20 hover:from-white/12 hover:to-white/5 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
           >
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-white/90 p-1">
-              {typeof item === 'string' ? (
-                <span className="text-xs font-semibold text-zinc-900">{item.slice(0, 2).toUpperCase()}</span>
-              ) : (
-                <img src={item.icon} alt={`${item.name} logo`} className="h-4 w-4 object-contain" loading="lazy" />
-              )}
-            </span>
-            {typeof item === 'string' ? item : item.name}
-          </li>
+            {/* Icon - Centered at top */}
+            <div className="flex justify-center mb-6">
+              <div className="inline-flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-white/15 to-white/5 p-4 shadow-lg">
+                <img src={item.icon} alt={`${item.language} logo`} className="h-full w-full object-contain" loading="lazy" />
+              </div>
+            </div>
+
+            {/* Title - Centered */}
+            <h3 className="text-lg font-bold uppercase tracking-wider text-white sm:text-xl">
+              {item.language}
+            </h3>
+
+            {/* Description - Centered */}
+            {item.description && (
+              <p className="mt-4 text-sm leading-relaxed text-zinc-300">
+                {item.description}
+              </p>
+            )}
+
+            {/* Framework Tags - Centered at bottom */}
+            {item.frameworks && (
+              <div className="mt-6 flex flex-wrap gap-2 justify-center">
+                {item.frameworks.map((framework, fIdx) => (
+                  <span
+                    key={fIdx}
+                    className="inline-block rounded-full bg-blue-400/30 px-3.5 py-1.5 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/40 transition duration-200 hover:bg-blue-400/40"
+                  >
+                    {framework.name}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   )
 }
