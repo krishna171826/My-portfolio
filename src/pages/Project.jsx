@@ -54,7 +54,7 @@ export default function Project() {
 
                     <div className="flex items-center justify-center gap-4 py-15">
             
-            <div className="h-px w-24 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-200" />
+            <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-200" />
           </div>
 
           <div className="mx-auto mt-12 grid max-w-7xl gap-8 xl:grid-cols-3">

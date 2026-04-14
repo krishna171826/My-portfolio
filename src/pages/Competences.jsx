@@ -212,7 +212,11 @@ const tools = [
   {
     name: 'Bash',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',  
-  }
+  },
+  {
+    name: 'Canva',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg',
+  },
 
 ]
 

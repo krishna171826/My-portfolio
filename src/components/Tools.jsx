@@ -1,12 +1,11 @@
-export function Tools({ items, index = '02' }) {
+export function Tools({ items }) {
   return (
     <section className="mt-20 text-center sm:mt-24">
       <div className="flex items-center justify-center gap-4">
-        <span className="font-mono text-xs tracking-[0.28em] text-zinc-400">{index}</span>
-        <div className="h-px w-24 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-32" />
+        <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent  md:w-300" />
       </div>
 
-      <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+      <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl pt-10 md:pt-20">
         <span className="text-white">Tools </span>
         <span className="text-slate-300">I Use</span>
       </h2>
