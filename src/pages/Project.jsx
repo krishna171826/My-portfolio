@@ -1,37 +1,36 @@
 import { StarfieldBackground } from '../components/Background'
 import { ProjectCard } from '../components/ProjectCard'
 import heroImage from '../assets/hero.png'
+import mernTodoImage from '../assets/mern-todo.jpg'
+
 
 const projects = [
   {
-    title: 'Chatify',
+    title: 'To-do App',
     description:
-      'Personal chat room and workspace to share resources and hang out with friends. Built with React, Material UI, and Firebase. Supports realtime messaging, image sharing, and reactions.',
-    githubUrl: 'https://github.com',
+      'A simple to-do app built with React and Firebase. Allows users to create, update, and delete tasks with a clean and intuitive interface.',
+    githubUrl: 'https://github.com/krishna171826/MERN-Todo',
     demoUrl: 'https://example.com',
-    image: heroImage,
-    competences: ['React', 'Material UI', 'Firebase'],
-    tools: ['VS Code', 'GitHub', 'Postman'],
+    image: mernTodoImage,
+    competences: ['React', 'Node.js', 'Express', 'MongoDB', 'Typescript', 'Taliwind CSS', 'DiasyUI '],
   },
   {
-    title: 'Bits-Of-Code',
+    title: 'Amour De Dieu',
     description:
       'A personal blog built with Next.js and Tailwind CSS. It reads markdown content and renders it as a clean dark-mode article experience.',
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
+    githubUrl: 'https://amour-de-dieu.org/',
+    demoUrl: 'https://amour-de-dieu.org/',
     image: heroImage,
-    competences: ['Next.js', 'Tailwind CSS', 'Markdown'],
-    tools: ['VS Code', 'GitHub', 'Vite'],
+    competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
   },
   {
-    title: 'Editor.io',
+    title: 'Real-Time App',
     description:
       'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
     githubUrl: 'https://github.com',
     demoUrl: 'https://example.com',
     image: heroImage,
-    competences: ['React', 'JavaScript', 'HTML/CSS'],
-    tools: ['VS Code', 'GitHub', 'Figma'],
+    competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
   },
 ]
 
