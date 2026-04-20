@@ -40,7 +40,7 @@ export default function About() {
 
         <section
           id="about"
-          className="w-full max-w-7xl pt-4 text-left"
+          className="w-full max-w-6xl pt-4 text-left md:pt-25"
         >
           <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)] lg:gap-12">
             <div>
@@ -49,28 +49,27 @@ export default function About() {
 
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
-                  I am a Software Engineer who loves transforming ideas into reliable, scalable products.
-                  I enjoy building high-performance systems and intuitive user experiences.
+                  Actuellement en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord,
+                  je prépare mon passage en troisième année (Bac+3)  une
+                  organisation qui me permet d&apos;être pleinement investi dans vos projets.
                 </p>
+
+                <p className='text-zinc-300/90'>je suis à la recherche d&apos;un contrat
+                  d&apos;alternance d&apos;un an débutant en septembre 2026. Passionné par le développement web,
+                  je propose un rythme de 2 semaines en entreprise et 2 semaines à l&apos;université</p>
+
                 <p className="text-zinc-300/90">
-                  I work with <span className="font-semibold text-zinc-100">JavaScript</span>,{' '}
-                  <span className="font-semibold text-zinc-100">Node.js</span>,{' '}
-                  <span className="font-semibold text-zinc-100">React</span>, and{' '}
-                  <span className="font-semibold text-zinc-100">Next.js</span> across both frontend
-                  and backend stacks.
-                </p>
-                <p className="text-zinc-300/90">
-                  My focus is to ship polished interfaces with strong performance and a clean, modern visual
-                  language.
+                 Je travaille principalement avec JavaScript, et je développe des applications full stack en utilisant
+                  React et Node.js, en cherchant à renforcer mes compétences au sein de projets concrets et collaboratifs.
                 </p>
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-80 sm:max-w-90 lg:max-w-95">
+            <div className="mx-auto w-full max-w-68 sm:max-w-76 lg:max-w-84">
               <div className="relative grid aspect-square place-items-center rounded-full border border-white/20 bg-radial-[at_35%_30%] from-zinc-200/30 via-slate-500/25 to-zinc-900/40 shadow-[0_18px_60px_rgba(148,163,184,0.2)] backdrop-blur-md animate-[avatarFloat_6s_ease-in-out_infinite]">
                 <div className="absolute inset-3 rounded-full border border-white/25" />
                 <div className="absolute inset-0 rounded-full [background:conic-gradient(from_220deg,rgba(255,255,255,0.02),rgba(203,213,225,0.2),rgba(255,255,255,0.02))]" />
-                <span className="relative text-5xl font-bold tracking-widest text-slate-200">SG</span>
+                <span className="relative text-4xl font-bold tracking-widest text-slate-200 sm:text-[2.65rem]">SG</span>
               </div>
             </div>
           </div>
@@ -78,7 +77,7 @@ export default function About() {
 
         <section
           id="education"
-          className="mt-16 w-full max-w-5xl text-left mb-20"
+          className="mt-16 w-full max-w-6xl text-left mb-20"
         >
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-linear-to-r from-zinc-400 to-transparent" />
@@ -88,13 +87,11 @@ export default function About() {
           </div>
 
           <div className="relative mt-6">
-            <div
-              className="absolute left-1/2 top-0 hidden h-full w-4 -translate-x-1/2 rounded-full shadow-[0_0_18px_rgba(125,211,252,0.28)] bg-size-[100%_240%] animate-[waterfallFlow_3.2s_linear_infinite] lg:block"
-              style={{
-                backgroundImage:
-                  'linear-gradient(to bottom, rgba(255,255,255,0.02) 0%, rgba(186,230,253,0.35) 18%, rgba(125,211,252,0.95) 48%, rgba(56,189,248,0.9) 62%, rgba(255,255,255,0.18) 78%, rgba(255,255,255,0.02) 100%)',
-              }}
-            />
+            <div className="pointer-events-none absolute left-1/2 top-0 hidden h-full -translate-x-1/2 lg:block">
+              <div className="relative h-full w-1 overflow-hidden rounded-full bg-white/5 shadow-[0_0_10px_rgba(56,189,248,0.12)]">
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.02)_0%,rgba(125,211,252,0.18)_20%,rgba(186,230,253,0.9)_45%,rgba(56,189,248,0.95)_55%,rgba(125,211,252,0.22)_75%,rgba(255,255,255,0.02)_100%)] bg-size-[100%_240%] animate-[timelineFlow_5.5s_linear_infinite]" />
+              </div>
+            </div>
 
             <div className="space-y-6 lg:space-y-0">
               {educationItems.map((item, index) => {
