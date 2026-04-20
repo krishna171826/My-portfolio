@@ -31,18 +31,18 @@ const educationItems = [
 
 export default function About() {
 	return (
-        <main className="relative min-h-screen overflow-hidden bg-transparent text-white pt-40">
+        <main className="relative min-h-screen overflow-hidden bg-transparent px-3 pt-40 text-white sm:px-6 lg:px-10">
       <StarfieldBackground />
       <IslandNavbar />
 
-      <section className="relative z-10 mx-auto flex min-h-screen  flex-col items-center justify-center gap-6 px-4 text-center">
+      <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-6 px-0 text-center">
 
 
         <section
           id="about"
-          className="w-full max-w-5xl pt-4 text-left"
+          className="w-full max-w-7xl pt-4 text-left"
         >
-          <div className="grid items-center gap-10 lg:grid-cols-[1.55fr_0.8fr]">
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)] lg:gap-12">
             <div>
               <h2 className="font-mono text-3xl font-medium tracking-[0.08em] text-white/90 sm:text-4xl">About Me
               </h2>
@@ -66,7 +66,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-67.5">
+            <div className="mx-auto w-full max-w-80 sm:max-w-90 lg:max-w-95">
               <div className="relative grid aspect-square place-items-center rounded-full border border-white/20 bg-radial-[at_35%_30%] from-zinc-200/30 via-slate-500/25 to-zinc-900/40 shadow-[0_18px_60px_rgba(148,163,184,0.2)] backdrop-blur-md animate-[avatarFloat_6s_ease-in-out_infinite]">
                 <div className="absolute inset-3 rounded-full border border-white/25" />
                 <div className="absolute inset-0 rounded-full [background:conic-gradient(from_220deg,rgba(255,255,255,0.02),rgba(203,213,225,0.2),rgba(255,255,255,0.02))]" />

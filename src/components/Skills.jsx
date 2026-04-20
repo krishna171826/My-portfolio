@@ -1,8 +1,8 @@
-export function Skills({ items, index = '01' }) {
+export function Skills({ items}) {
   return (
     <section className="text-center">
       <div className="flex items-center justify-center gap-4">
-        <span className="font-mono text-xs tracking-[0.28em] text-zinc-400">{index}</span>
+        
         <div className="h-px w-24 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-32" />
       </div>
 

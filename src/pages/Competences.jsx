@@ -66,7 +66,19 @@ const languagesAndFrameworks = [
         name: 'Jinja',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
         tags: ['Templating', 'Server-side Rendering', 'Python-based']
-      }
+      },
+      {
+        name: 'Matplotlib',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        tags: ['Data Visualization', 'Charts', 'Plots']
+      },
+      {
+        name: 'Pandas',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        tags: ['Data Analysis', 'DataFrames', 'Python-based']   
+      },
+      
+
     ]
   },
   {

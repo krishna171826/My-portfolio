@@ -2,6 +2,8 @@ import { StarfieldBackground } from '../components/Background'
 import { ProjectCard } from '../components/ProjectCard'
 import heroImage from '../assets/hero.png'
 import mernTodoImage from '../assets/mern-todo.jpg'
+import amourDeDieuImage from '../assets/amour-de-dieu.jpg'
+import maisonConnecteeImage from '../assets/maison_connectee.jpg'
 
 
 const projects = [
@@ -10,7 +12,7 @@ const projects = [
     description:
       'A simple to-do app built with React and Firebase. Allows users to create, update, and delete tasks with a clean and intuitive interface.',
     githubUrl: 'https://github.com/krishna171826/MERN-Todo',
-    demoUrl: 'https://example.com',
+    demoUrl: 'https://merntodo-beta.vercel.app/',
     image: mernTodoImage,
     competences: ['React', 'Node.js', 'Express', 'MongoDB', 'Typescript', 'Taliwind CSS', 'DiasyUI '],
   },
@@ -20,7 +22,7 @@ const projects = [
       'A personal blog built with Next.js and Tailwind CSS. It reads markdown content and renders it as a clean dark-mode article experience.',
     githubUrl: 'https://amour-de-dieu.org/',
     demoUrl: 'https://amour-de-dieu.org/',
-    image: heroImage,
+    image: amourDeDieuImage,
     competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
   },
   {
@@ -31,6 +33,24 @@ const projects = [
     demoUrl: 'https://example.com',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
+  },
+    {
+    title: 'Voiture Électrique',
+    description:
+      'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
+    githubUrl: 'https://github.com',
+    demoUrl: 'https://example.com',
+    image: heroImage,
+    competences: ['Arduino', 'SolidWorks '],
+  },
+    {
+    title: 'Maison Connectée',
+    description:
+      'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
+    githubUrl: 'https://github.com',
+    demoUrl: 'https://example.com',
+    image: maisonConnecteeImage,
+    competences: ['SolidWorks', 'Arduino'],
   },
 ]
 
