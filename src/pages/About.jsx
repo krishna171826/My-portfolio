@@ -1,32 +1,63 @@
 import { StarfieldBackground } from '../components/Background.jsx'
 import { IslandNavbar } from '../components/Navbar.jsx';
+import GK_logo from '../assets/GK_logo.svg'
+import { ProfessionalExperience } from '../components/ProfessionalExperience.jsx'
 
 const educationItems = [
   {
-    title: 'Bachelor of Computer Science',
-    subtitle: 'University / College Name',
-    period: '2020 - 2024',
-    description:
-      'Studied core programming concepts, data structures, software engineering, and modern web development.',
+    title: 'BUT Informatique',
+    subtitle: 'Sorbonne Paris Nord',
+    period: 'Depuis septembre 2024',
+    location: 'Villetaneuse',
+    points: [
+      "Développement d'une application PHP de suivi de colis.",
+      'Création et gestion de bases de données avec PostgreSQL.',
+      'Installation et configuration de postes sous Linux avec utilisation de Bash.',
+    ],
     side: 'left',
   },
   {
-    title: 'Frontend Development Focus',
-    subtitle: 'React, UI, and responsive design',
-    period: '2024',
-    description:
-      'Built practical skills in component-based UI development, styling systems, and polished user experiences.',
+    title: "Baccalauréat : STI2D",
+    subtitle: 'Lycée Voillaume',
+    period: 'De septembre 2021 à juillet 2024',
+    location: 'Aulnay-sous-Bois, France',
+    points: [
+      "Modélisation d'une maquette de maison connectée sur SolidWorks.",
+      "Conception d'une voiture électrique avec Arduino.",
+    ],
     side: 'right',
   },
-  {
-    title: 'Backend and APIs',
-    subtitle: 'Node.js and application logic',
-    period: '2024',
-    description:
-      'Expanded into server-side development, REST APIs, and application architecture for full-stack work.',
-    side: 'left',
-  },
 
+]
+
+const experienceItems = [
+  {
+    title: 'Developer web full stack - stage',
+    date: 'De janvier 2026 à mars 2026',
+    company: 'GOVO',
+    location: 'Asnières-sur-Seine, France',
+    points: [
+      'Développement et optimisation de la plateforme métier.',
+      'Sécurisation des données et respect des bonnes pratiques.',
+    ],
+  },
+  {
+    title: 'Responsable IT - Bénévole',
+    date: 'Depuis octobre 2025',
+    company: 'Amour de dieu',
+    location: 'Sevran, France',
+    points: ['Responsable IT de l’association Amour de Dieu.'],
+  },
+  {
+    title: 'Préparation des dalles d’exposition - travail des vacances',
+    date: 'De 2022 à 2024',
+    company: 'King-events',
+    location: 'Aulnay-sous-Bois, France',
+    points: [
+      'Utilisation de l’anglais avec les clients étrangers.',
+      'Organisation des boutiques selon le planning.',
+    ],
+  },
 ]
 
 export default function About() {
@@ -42,11 +73,12 @@ export default function About() {
           id="about"
           className="w-full max-w-6xl pt-4 text-left md:pt-25"
         >
+          <h1 className="text-center font-mono text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
+            About Me
+          </h1>
+
           <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)] lg:gap-12">
             <div>
-              <h2 className="font-mono text-3xl font-medium tracking-[0.08em] text-white/90 sm:text-4xl">About Me
-              </h2>
-
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
                   Actuellement en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord,
@@ -65,15 +97,19 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-68 sm:max-w-76 lg:max-w-84">
-              <div className="relative grid aspect-square place-items-center rounded-full border border-white/20 bg-radial-[at_35%_30%] from-zinc-200/30 via-slate-500/25 to-zinc-900/40 shadow-[0_18px_60px_rgba(148,163,184,0.2)] backdrop-blur-md animate-[avatarFloat_6s_ease-in-out_infinite]">
-                <div className="absolute inset-3 rounded-full border border-white/25" />
-                <div className="absolute inset-0 rounded-full [background:conic-gradient(from_220deg,rgba(255,255,255,0.02),rgba(203,213,225,0.2),rgba(255,255,255,0.02))]" />
-                <span className="relative text-4xl font-bold tracking-widest text-slate-200 sm:text-[2.65rem]">SG</span>
-              </div>
+            <div className="mx-auto flex w-full max-w-none items-center justify-center">
+              <img
+                src={GK_logo}
+                alt="Suresh Gopi"
+                className="h-96 w-[min(68vw,44rem)] max-w-none object-contain sm:h-112 lg:h-128"
+              />
             </div>
           </div>
         </section>
+
+          <div className="flex items-center justify-center gap-4 pt-20">
+        <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent   md:w-300" />
+      </div>
 
         <section
           id="education"
@@ -82,7 +118,7 @@ export default function About() {
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-linear-to-r from-zinc-400 to-transparent" />
             <h3 className="font-mono text-2xl font-medium tracking-[0.08em] text-white/90 sm:text-3xl">
-              Education
+              Diplômes et Formations
             </h3>
           </div>
 
@@ -114,9 +150,15 @@ export default function About() {
                               {item.period}
                             </span>
                           </div>
-                          <p className="mt-4 text-sm leading-7 text-zinc-300/85 sm:text-base">
-                            {item.description}
-                          </p>
+                          <p className="mt-2 text-sm text-zinc-300/75 sm:text-base">{item.location}</p>
+                          <ul className="mt-4 space-y-2 text-sm leading-7 text-zinc-300/90 sm:text-base">
+                            {item.points.map((point) => (
+                              <li key={point} className="flex gap-3">
+                                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-200/80" />
+                                <span>{point}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       ) : null}
                     </div>
@@ -135,9 +177,15 @@ export default function About() {
                               {item.period}
                             </span>
                           </div>
-                          <p className="mt-4 text-sm leading-7 text-zinc-300/85 sm:text-base">
-                            {item.description}
-                          </p>
+                          <p className="mt-2 text-sm text-zinc-300/75 sm:text-base">{item.location}</p>
+                          <ul className="mt-4 space-y-2 text-sm leading-7 text-zinc-300/90 sm:text-base">
+                            {item.points.map((point) => (
+                              <li key={point} className="flex gap-3">
+                                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-200/80" />
+                                <span>{point}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       ) : null}
                     </div>
@@ -147,6 +195,8 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <ProfessionalExperience items={experienceItems} />
       </section>
 
     </main>

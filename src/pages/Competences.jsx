@@ -153,15 +153,16 @@ const languagesAndFrameworks = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
     description: 'Langage de programmation pour le développement backend',
     frameworks: [
-      {
-        name: 'Symfony',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg',
-        tags: ['Framework', 'MVC', 'Enterprise']
-      },
+
       {
         name: 'Laravel',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
         tags: ['Framework', 'MVC', 'Web Applications']
+      },
+      {
+        name: 'Blade',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+        tags: ['Templating', 'Server-side Rendering', 'PHP-based']
       }
     ]
   },
