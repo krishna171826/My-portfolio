@@ -4,6 +4,7 @@ import heroImage from '../assets/hero.png'
 import mernTodoImage from '../assets/mern-todo.jpg'
 import amourDeDieuImage from '../assets/amour-de-dieu.jpg'
 import maisonConnecteeImage from '../assets/maison_connectee.jpg'
+import voitureElectriqueImage from '../assets/voiture_ele.jpg'
 
 
 const projects = [
@@ -13,6 +14,7 @@ const projects = [
       'A simple to-do app built with React and Firebase. Allows users to create, update, and delete tasks with a clean and intuitive interface.',
     githubUrl: 'https://github.com/krishna171826/MERN-Todo',
     demoUrl: 'https://merntodo-beta.vercel.app/',
+    status: 'Active',
     image: mernTodoImage,
     competences: ['React', 'Node.js', 'Express', 'MongoDB', 'Typescript', 'Taliwind CSS', 'DiasyUI '],
   },
@@ -22,6 +24,7 @@ const projects = [
       'A personal blog built with Next.js and Tailwind CSS. It reads markdown content and renders it as a clean dark-mode article experience.',
     githubUrl: 'https://amour-de-dieu.org/',
     demoUrl: 'https://amour-de-dieu.org/',
+    status: 'En cours',
     image: amourDeDieuImage,
     competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
   },
@@ -31,6 +34,7 @@ const projects = [
       'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
     githubUrl: 'https://github.com',
     demoUrl: 'https://example.com',
+    status: 'En cours',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
   },
@@ -39,8 +43,9 @@ const projects = [
     description:
       'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
     githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
-    image: heroImage,
+    demoUrl: '',
+    status: 'Terminé',
+    image: voitureElectriqueImage,
     competences: ['Arduino', 'SolidWorks '],
   },
     {
@@ -48,7 +53,8 @@ const projects = [
     description:
       'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
     githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
+    demoUrl: '',
+    status: 'Terminé',
     image: maisonConnecteeImage,
     competences: ['SolidWorks', 'Arduino'],
   },

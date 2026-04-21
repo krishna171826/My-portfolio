@@ -7,8 +7,8 @@ export function Skills({ items}) {
       </div>
 
       <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-        <span className="text-white">Professional </span>
-        <span className="text-slate-300">Skillset</span>
+
+        <span className="text-slate-300">Technologies</span>
       </h2>
 
       <div className="mx-auto mt-12 grid max-w-7xl gap-6 sm:grid-cols-2 lg:grid-cols-4 ">

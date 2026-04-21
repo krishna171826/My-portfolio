@@ -19,7 +19,7 @@ const educationItems = [
   {
     title: "Baccalauréat : STI2D",
     subtitle: 'Lycée Voillaume',
-    period: 'De septembre 2021 à juillet 2024',
+    period: 'De 2021 à 2024',
     location: 'Aulnay-sous-Bois, France',
     points: [
       "Modélisation d'une maquette de maison connectée sur SolidWorks.",
@@ -33,7 +33,7 @@ const educationItems = [
 const experienceItems = [
   {
     title: 'Developer web full stack - stage',
-    date: 'De janvier 2026 à mars 2026',
+    date: '2 mois',
     company: 'GOVO',
     location: 'Asnières-sur-Seine, France',
     points: [

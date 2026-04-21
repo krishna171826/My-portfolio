@@ -241,13 +241,13 @@ export default function Competences() {
 
       <section className="relative z-10 mx-auto w-full max-w-7xl">
         <header className="mb-16 text-center sm:mb-20">
-          <p className="font-mono text-sm tracking-[0.35em] text-zinc-400 uppercase">Professional Profile</p>
-          <h1 className="mt-4 font-mono text-4xl font-medium tracking-tight text-white sm:text-6xl">
-            <span className="text-white">My </span>
-            <span className="text-slate-300">Competences</span>
+          
+          <h1 className="mt-15 font-mono text-4xl font-medium tracking-tight text-white sm:text-6xl">
+            <span className="text-white">Mes </span>
+            <span className="text-slate-300">Compétences</span>
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-zinc-300/80 sm:text-base">
-            The languages, frameworks, and tools I use to build modern web experiences.
+            Les langages, frameworks et outils que j’utilise pour créer des expériences web performantes.
           </p>
         </header>
 
