@@ -1,5 +1,6 @@
 import { StarfieldBackground } from '../components/Background'
-
+import { Footer } from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 
 
@@ -45,10 +46,19 @@ export default function Home() {
                   visuelle moderne et épurée.
                 </p>
               </div>
+
+              <div className="mt-8">
+                <Link
+                  to="/contact"
+                  className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:bg-white/20 hover:border-white/30"
+                >
+                  Let&apos;s Connect →
+                </Link>
+              </div>
           </div>
         </section>
       </section>
-
+      <Footer />
     </main>
   )
 }

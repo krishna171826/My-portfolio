@@ -1,6 +1,7 @@
 import { StarfieldBackground } from '../components/Background'
 import { Skills } from '../components/Skills'
 import { Tools } from '../components/Tools'
+import { Footer } from '../components/Footer'
 
 const languagesAndFrameworks = [
   {
@@ -236,10 +237,10 @@ const tools = [
 
 export default function Competences() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-transparent px-5 pb-16 pt-28 text-white sm:px-8">
+    <main className="relative min-h-screen overflow-hidden bg-transparent pb-16 pt-28 text-white">
       <StarfieldBackground />
 
-      <section className="relative z-10 mx-auto w-full max-w-7xl">
+      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
         <header className="mb-16 text-center sm:mb-20">
           
           <h1 className="mt-15 font-mono text-4xl font-medium tracking-tight text-white sm:text-6xl">
@@ -254,6 +255,7 @@ export default function Competences() {
         <Skills items={languagesAndFrameworks} index="01" />
         <Tools items={tools} index="02" />
       </section>
+      <Footer />
     </main>
   )
 }

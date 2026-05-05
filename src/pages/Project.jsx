@@ -1,5 +1,6 @@
 import { StarfieldBackground } from '../components/Background'
 import { ProjectCard } from '../components/ProjectCard'
+import { Footer } from '../components/Footer'
 import heroImage from '../assets/hero.png'
 import mernTodoImage from '../assets/mern-todo.jpg'
 import amourDeDieuImage from '../assets/amour-de-dieu.jpg'
@@ -62,10 +63,10 @@ const projects = [
 
 export default function Project() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-transparent px-5 pb-16 pt-28 text-white sm:px-8">
+    <main className="relative min-h-screen overflow-hidden bg-transparent pb-16 pt-28 text-white">
       <StarfieldBackground />
 
-      <section className="relative z-10 mx-auto w-full max-w-7xl">
+      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
 
 
         <section>
@@ -89,6 +90,7 @@ export default function Project() {
           </div>
         </section>
       </section>
+      <Footer />
     </main>
   )
 }

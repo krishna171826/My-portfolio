@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Competences from './pages/Competences.jsx';
 import Project from './pages/Project.jsx';
+import Contact from './pages/Contact.jsx';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/competences" element={<Competences />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

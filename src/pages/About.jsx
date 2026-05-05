@@ -1,5 +1,6 @@
 import { StarfieldBackground } from '../components/Background.jsx'
 import { IslandNavbar } from '../components/Navbar.jsx';
+import { Footer } from '../components/Footer'
 import GK_logo from '../assets/GK_logo.svg'
 import { ProfessionalExperience } from '../components/ProfessionalExperience.jsx'
 
@@ -62,16 +63,16 @@ const experienceItems = [
 
 export default function About() {
 	return (
-        <main className="relative min-h-screen overflow-hidden bg-transparent px-3 pt-40 text-white sm:px-6 lg:px-10">
+        <main className="relative min-h-screen overflow-hidden bg-transparent pt-40 text-white">
       <StarfieldBackground />
       <IslandNavbar />
 
-      <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-6 px-0 text-center">
+<section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-6 px-3 sm:px-6 lg:px-10 text-center">
 
 
         <section
           id="about"
-          className="w-full max-w-6xl pt-4 text-left md:pt-25"
+          className="w-full max-w-6xl pt-4 text-left md:pt-10"
         >
           <h1 className="text-center font-mono text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
             About Me
@@ -107,9 +108,9 @@ export default function About() {
           </div>
         </section>
 
-          <div className="flex items-center justify-center gap-4 pt-20">
-        <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent   md:w-300" />
-      </div>
+        <div className="flex items-center justify-center gap-4 pt-20">
+          <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent   md:w-250" />
+        </div>
 
         <section
           id="education"
@@ -196,9 +197,14 @@ export default function About() {
           </div>
         </section>
 
+              <div className="flex items-center justify-center gap-4 pt-5 pb-15">
+          <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent   md:w-250" />
+        </div>
+
         <ProfessionalExperience items={experienceItems} />
       </section>
 
+      <Footer />
     </main>
 	)
 }
