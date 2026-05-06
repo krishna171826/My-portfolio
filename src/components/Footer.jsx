@@ -84,18 +84,10 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-white/10 mt-8 pt-8">
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
             <p className="text-xs text-white/50">
-              © {new Date().getFullYear()} My Portfolio. All rights reserved.
+              Made By Suresh Gopi. All rights reserved. © 2024
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-xs text-white/50 hover:text-white/70 transition">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-xs text-white/50 hover:text-white/70 transition">
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </div>
