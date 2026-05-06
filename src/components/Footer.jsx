@@ -30,7 +30,7 @@ export function Footer() {
               Portfolio
             </Link>
             <p className="text-sm text-white/60">
-              Building elegant digital experiences with modern technologies.
+              Building elegant websites with modern technologies.
             </p>
           </div>
 
@@ -82,15 +82,16 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-white/10 mt-8 pt-8">
-          <div className="flex flex-col items-center gap-4 sm:flex-row">
+      </div>
+
+              {/* Bottom Section */}
+        <div className="border-t border-white/10 mt-5 p-6 text-center">
+          <div className="flex justify-center gap-4 sm:flex-row">
             <p className="text-xs text-white/50">
-              Made By Suresh Gopi. All rights reserved. © 2024
+              Made By Suresh Gopi. All rights reserved. © 2026
             </p>
           </div>
         </div>
-      </div>
     </footer>
   )
 }
