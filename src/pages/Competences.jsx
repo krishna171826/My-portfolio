@@ -240,7 +240,7 @@ export default function Competences() {
     <main className="relative min-h-screen overflow-hidden bg-transparent pt-28 text-white">
       <StarfieldBackground />
 
-      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 mb-20 sm:px-8">
         <header className="mb-16 text-center sm:mb-20">
           
           <h1 className="mt-15 font-mono text-4xl font-medium tracking-tight text-white sm:text-6xl">

@@ -22,8 +22,8 @@ const projects = [
   {
     title: 'Amour De Dieu',
     description:
-      'A personal blog built with Next.js and Tailwind CSS. It reads markdown content and renders it as a clean dark-mode article experience.',
-    githubUrl: 'https://amour-de-dieu.org/',
+      'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',
+    githubUrl: '',
     demoUrl: 'https://amour-de-dieu.org/',
     status: 'En cours',
     image: amourDeDieuImage,
@@ -32,9 +32,9 @@ const projects = [
   {
     title: 'Real-Time App',
     description:
-      'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
-    githubUrl: 'https://github.com',
-    demoUrl: 'https://example.com',
+      'Pendant ma période de stage, j’ai réalisé une application de chat en temps réel afin de me familiariser avec les technologies utilisées par l’équipe de l’entreprise. C’était ma première expérience avec NestJS et Socket.IO.',
+    githubUrl: '',
+    demoUrl: '',
     status: 'En cours',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
@@ -42,7 +42,7 @@ const projects = [
     {
     title: 'Voiture Électrique',
     description:
-      'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
+      'Lors de ma dernière année en STI2D, nous avons réalisé une voiture électrique à l’aide d’Arduino et de SolidWorks dans le cadre de mon projet de fin d’année.',
     githubUrl: 'https://github.com',
     demoUrl: '',
     status: 'Terminé',
@@ -52,7 +52,7 @@ const projects = [
     {
     title: 'Maison Connectée',
     description:
-      'Online code and markdown editor with instant preview, HTML/CSS/JS support, local storage, and custom toolbar actions.',
+      'En première STI2D, nous avons réalisé un projet de maison connectée à l’aide d’Arduino et de SolidWorks. J’étais chargé de la conception de la maison avec SolidWorks.',
     githubUrl: 'https://github.com',
     demoUrl: '',
     status: 'Terminé',
@@ -66,7 +66,7 @@ export default function Project() {
     <main className="relative min-h-screen overflow-hidden bg-transparent pt-28 text-white">
       <StarfieldBackground />
 
-      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <section className="relative z-10 mx-auto w-full max-w-7xl px-5 mb-20 sm:px-8">
 
 
         <section>
