@@ -237,7 +237,7 @@ const tools = [
 
 export default function Competences() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-transparent pb-16 pt-28 text-white">
+    <main className="relative min-h-screen overflow-hidden bg-transparent pt-28 text-white">
       <StarfieldBackground />
 
       <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">

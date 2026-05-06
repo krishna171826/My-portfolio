@@ -34,16 +34,16 @@ export default function Contact() {
       <section className="relative z-10 mx-auto w-full max-w-2xl px-4 py-32 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-white mb-4">
-            Get In Touch
+            Contact
           </h1>
-          <p className="text-white/60 text-lg">
-            Drop me a message and I'll get back to you soon.
+          <p className="text-white/60 text-3xl">
+            Parlons de votre projet
           </p>
         </div>
 
         {submitted && (
           <div className="mb-8 text-center text-green-300/90 font-mono text-sm">
-            ✓ Message sent successfully!
+            ✓ Message envoyé avec succès!
           </div>
         )}
 
@@ -57,7 +57,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              placeholder="Name"
+              placeholder="Nom"
               className="w-full bg-transparent border-b border-white/20 px-0 py-2 font-mono text-sm text-white placeholder-white/40 transition focus:border-white focus:outline-none"
             />
           </div>
@@ -96,7 +96,7 @@ export default function Contact() {
               type="submit"
               className="text-white font-mono text-sm group hover:text-white/70 transition"
             >
-              Send →
+              Envoyer →
             </button>
           </div>
         </form>

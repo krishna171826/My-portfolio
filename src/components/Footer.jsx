@@ -19,7 +19,7 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-gradient-to-b from-transparent to-white/5 backdrop-blur-xl">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:pt-8 pb-0">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="flex flex-col gap-4">
@@ -30,7 +30,7 @@ export function Footer() {
               Portfolio
             </Link>
             <p className="text-sm text-white/60">
-              Building elegant websites with modern technologies.
+              Créer des sites web élégants avec les technologies modernes.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-sm font-semibold text-white">Connect</h3>
+            <h3 className="text-sm font-semibold text-white">Connecter</h3>
             <ul className="space-y-2">
               {socialLinks.map((link) => (
                 <li key={link.name}>
@@ -72,26 +72,25 @@ export function Footer() {
 
           {/* CTA Section */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-sm font-semibold text-white">Get In Touch</h3>
+            <h3 className="text-sm font-semibold text-white">Entrez en contact</h3>
             <button
               type="button"
               className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20 w-fit"
             >
-              Contact Me
+              Me contacter
             </button>
           </div>
         </div>
 
-      </div>
-
-              {/* Bottom Section */}
+        {/* Bottom Section */}
         <div className="border-t border-white/10 mt-5 p-6 text-center">
           <div className="flex justify-center gap-4 sm:flex-row">
             <p className="text-xs text-white/50">
-              Made By Suresh Gopi. All rights reserved. © 2026
+              Créé par Suresh Gopi. Tous les droits réservés. © 2026
             </p>
           </div>
         </div>
+      </div>
     </footer>
   )
 }

@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'To-do App',
     description:
-      'A simple to-do app built with React and Firebase. Allows users to create, update, and delete tasks with a clean and intuitive interface.',
+      'Une application simple de to-do développée avec React, Express.js et MongoDB. Elle permet aux utilisateurs de créer, modifier et supprimer des tâches grâce à une interface claire et intuitive. J’ai réalisé ce projet comme une introduction à la stack MERN.',
     githubUrl: 'https://github.com/krishna171826/MERN-Todo',
     demoUrl: 'https://merntodo-beta.vercel.app/',
     status: 'Active',
@@ -63,7 +63,7 @@ const projects = [
 
 export default function Project() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-transparent pb-16 pt-28 text-white">
+    <main className="relative min-h-screen overflow-hidden bg-transparent pt-28 text-white">
       <StarfieldBackground />
 
       <section className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8">
