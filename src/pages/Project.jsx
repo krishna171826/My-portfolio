@@ -72,10 +72,10 @@ export default function Project() {
         <section>
 
           <h2 className="mt-5 text-center font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl pt-10">
-            <span className="text-slate-300">My Recent</span> <span className="text-white">Works</span>
+            <span className="text-slate-300">Mes Récents</span> <span className="text-white">projets</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center font-mono text-sm leading-7 text-zinc-300/80">
-            Here are a few projects I&apos;ve worked on recently.
+            Voici quelques projets sur lesquels j'ai travaillé récemment.
           </p>
 
                     <div className="flex items-center justify-center gap-4 py-15">

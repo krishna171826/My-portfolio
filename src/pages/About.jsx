@@ -8,7 +8,7 @@ const educationItems = [
   {
     title: 'BUT Informatique',
     subtitle: 'Sorbonne Paris Nord',
-    period: 'Depuis septembre 2024',
+    period: 'Depuis 2024',
     location: 'Villetaneuse',
     points: [
       "Développement d'une application PHP de suivi de colis.",
@@ -44,7 +44,7 @@ const experienceItems = [
   },
   {
     title: 'Responsable IT - Bénévole',
-    date: 'Depuis octobre 2025',
+    date: 'Depuis 2025',
     company: 'Amour de dieu',
     location: 'Sevran, France',
     points: ['Responsable IT de l’association Amour de Dieu.'],

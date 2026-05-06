@@ -41,12 +41,13 @@ export function IslandNavbar() {
 
         <div className="flex items-center gap-2">
           {/* Example: Download button for CV */}
-          <button
-            type="button"
+          <a
+            href='../assets/Gopi_SURESH-alternance.pdf'
+            download
             className="rounded-full border border-white/20 bg-white/15 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20"
           >
             CV
-          </button>
+          </a>
 
           <button
             type="button"
