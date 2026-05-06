@@ -3,13 +3,17 @@ import { StarfieldBackground } from '../components/Background'
 import { Footer } from '../components/Footer'
 
 export default function Contact() {
+  const formspreeEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -19,12 +23,42 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setFormData({ name: '', email: '', message: '' })
-    setTimeout(() => setSubmitted(false), 3000)
+
+    if (!formspreeEndpoint) {
+      setSubmitted(false)
+      setErrorMessage('Configuration Formspree manquante (VITE_FORMSPREE_ENDPOINT).')
+      return
+    }
+
+    try {
+      setIsSubmitting(true)
+      setSubmitted(false)
+      setErrorMessage('')
+
+      const response = await fetch(formspreeEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Erreur lors de l\'envoi du message.')
+      }
+
+      setSubmitted(true)
+      setFormData({ name: '', email: '', message: '' })
+      setTimeout(() => setSubmitted(false), 3000)
+    } catch {
+      setSubmitted(false)
+      setErrorMessage('Impossible d\'envoyer le message. Veuillez réessayer.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -44,6 +78,12 @@ export default function Contact() {
         {submitted && (
           <div className="mb-8 text-center text-green-300/90 font-mono text-sm">
             ✓ Message envoyé avec succès!
+          </div>
+        )}
+
+        {errorMessage && (
+          <div className="mb-8 text-center text-red-300/90 font-mono text-sm">
+            {errorMessage}
           </div>
         )}
 
@@ -94,9 +134,10 @@ export default function Contact() {
           <div className="pt-8">
             <button
               type="submit"
+              disabled={isSubmitting}
               className="text-white font-mono text-sm group hover:text-white/70 transition"
             >
-              Envoyer →
+              {isSubmitting ? 'Envoi en cours...' : 'Envoyer →'}
             </button>
           </div>
         </form>
