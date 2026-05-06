@@ -10,10 +10,9 @@ const routeMap = {
 const navItems = ['Home', 'About', 'Competences', 'Project'];
 
 const socialLinks = [
-  { name: 'GitHub', icon: '↗', url: '#' },
-  { name: 'LinkedIn', icon: '↗', url: '#' },
-  { name: 'Twitter', icon: '↗', url: '#' },
-  { name: 'Email', icon: '✉', url: 'mailto:contact@example.com' },
+  { name: 'GitHub', icon: '↗', url: 'https://github.com/krishna171826' },
+  { name: 'LinkedIn', icon: '↗', url: 'https://www.linkedin.com/in/gopi-suresh-6b5440327/' },
+  { name: 'Email', icon: '✉', url: 'mailto:gopi.suresh2609@gmail.com' },
 ];
 
 export function Footer() {
