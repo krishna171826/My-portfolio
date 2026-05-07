@@ -14,7 +14,7 @@ const projects = [
     description:
       'Une application simple de to-do développée avec React, Express.js et MongoDB. Elle permet aux utilisateurs de créer, modifier et supprimer des tâches grâce à une interface claire et intuitive. J’ai réalisé ce projet comme une introduction à la stack MERN.',
     githubUrl: 'https://github.com/krishna171826/MERN-Todo',
-    demoUrl: 'https://merntodo-beta.vercel.app/',
+    demoUrl: 'https://todo.sureshgopi.me/',
     status: 'Active',
     image: mernTodoImage,
     competences: ['React', 'Node.js', 'Express', 'MongoDB', 'Typescript', 'Taliwind CSS', 'DiasyUI '],
@@ -24,7 +24,7 @@ const projects = [
     description:
       'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',
     githubUrl: '',
-    demoUrl: 'https://amour-de-dieu.org/',
+    demoUrl: 'https://beta.amour-de-dieu.org/',
     status: 'En cours',
     image: amourDeDieuImage,
     competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
@@ -33,9 +33,9 @@ const projects = [
     title: 'Real-Time App',
     description:
       'Pendant ma période de stage, j’ai réalisé une application de chat en temps réel afin de me familiariser avec les technologies utilisées par l’équipe de l’entreprise. C’était ma première expérience avec NestJS et Socket.IO.',
-    githubUrl: '',
+    githubUrl: 'https://github.com/krishna171826/chat-realtime-1',
     demoUrl: '',
-    status: 'En cours',
+    status: 'Terminé',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
   },
