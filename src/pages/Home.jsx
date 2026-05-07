@@ -20,7 +20,7 @@ export default function Home() {
 
         <section
           id="about"
-          className="w-full max-w-6xl pt-16 text-left sm:pt-20"
+          className="w-full max-w-6xl pt-16 text-center sm:pt-20"
         >
           <div className="items-center">
            
