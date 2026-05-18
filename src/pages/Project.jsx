@@ -25,7 +25,7 @@ const projects = [
       'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',
     githubUrl: '',
     demoUrl: 'https://beta.amour-de-dieu.org/',
-    status: 'En cours',
+    status: 'Active',
     image: amourDeDieuImage,
     competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
   },
@@ -43,7 +43,7 @@ const projects = [
     title: 'Voiture Électrique',
     description:
       'Lors de ma dernière année en STI2D, nous avons réalisé une voiture électrique à l’aide d’Arduino et de SolidWorks dans le cadre de mon projet de fin d’année.',
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/krishna171826/Voiture_-lectrique',
     demoUrl: '',
     status: 'Terminé',
     image: voitureElectriqueImage,
@@ -53,7 +53,7 @@ const projects = [
     title: 'Maison Connectée',
     description:
       'En première STI2D, nous avons réalisé un projet de maison connectée à l’aide d’Arduino et de SolidWorks. J’étais chargé de la conception de la maison avec SolidWorks.',
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/krishna171826/Maison-connect',
     demoUrl: '',
     status: 'Terminé',
     image: maisonConnecteeImage,
