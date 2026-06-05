@@ -24,7 +24,7 @@ const projects = [
     description:
       'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',
     githubUrl: '',
-    demoUrl: 'https://beta.amour-de-dieu.org/',
+    demoUrl: 'https://amour-de-dieu.org/',
     status: 'Active',
     image: amourDeDieuImage,
     competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
