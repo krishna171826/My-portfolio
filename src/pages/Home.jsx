@@ -30,9 +30,7 @@ export default function Home() {
 
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
-                  Je suis un étudiant en informatique passionné par la transformation d&apos;idées en produits
-                  fiables et évolutifs. J&apos;aime concevoir des applications performantes et des expériences
-                  utilisateur intuitives.
+                  Je suis étudiant en informatique et j'apprécie transformer des idées en produits fiables et évolutifs. J'aime concevoir des applications performantes et des expériences utilisateur intuitives.
                 </p>
                 <p className="text-zinc-300/90">
                   Je travaille avec <span className="font-semibold text-zinc-100">JavaScript</span>,{' '}

@@ -51,7 +51,7 @@ const experienceItems = [
     ],
   },
   {
-    title: 'Préparation des dalles d’exposition - Job d’été',
+    title: 'Préparation des salles d’exposition - Job d’été',
     date: 'De 2022 à 2024',
     company: 'King-events',
     location: 'Aulnay-sous-Bois, France',
@@ -81,14 +81,11 @@ export default function About() {
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
                   Actuellement en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord, 
-                  je prépare mon passage en troisième année (Bac+3). Rigoureux et passionné, je suis pleinement 
-                  investi dans la réussite de vos projets.
+                  je prépare mon passage en troisième année (Bac+3). 
                 </p>
 
                 <p className="text-zinc-300/90">
-                  Je suis à la recherche d&apos;un contrat d&apos;alternance d&apos;un an débutant en septembre 2026. 
-                  Passionné par le développement web, je propose un rythme de 2 semaines en entreprise et 2 semaines 
-                  à l&apos;université.
+                  Je suis à la recherche d'un contrat d'alternance d'un an débutant en septembre 2026. Je développe des applications web et souhaite mettre mes compétences au service de projets concrets au sein de votre équipe. Je propose un rythme de 2 semaines en entreprise et 2 semaines à l'université.
                 </p>
 
                 <p className="text-zinc-300/90">
