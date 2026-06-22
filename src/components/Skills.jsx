@@ -22,7 +22,7 @@ export function Skills({ items }) {
             <div
               key={idx}
               onClick={() => setActiveCard(isSelected ? null : idx)} // Toggle view on click
-              className={`group relative rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 cursor-pointer select-none min-h-[340px] flex flex-col justify-between
+              className={`group relative rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 cursor-pointer select-none min-h-[380px] flex flex-col justify-start items-center
                 ${isSelected 
                   ? 'border-blue-500/50 bg-linear-to-br from-blue-950/30 to-zinc-900/50 shadow-[0_0_30px_rgba(59,130,246,0.2)]' 
                   : 'border-white/10 bg-linear-to-br from-white/8 to-white/3 hover:border-white/20 hover:from-white/12 hover:to-white/5 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'
@@ -36,35 +36,33 @@ export function Skills({ items }) {
 
               {/* View 1: Standard Card Info */}
               {!isSelected ? (
-                <div className="flex flex-col h-full justify-between w-full">
-                  <div>
-                    {/* Icon */}
-                    <div className="flex justify-center mb-6">
-                      <div className="inline-flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-white/15 to-white/5 p-4 shadow-lg">
-                        <img src={item.icon} alt={`${item.language} logo`} className="h-full w-full object-contain" loading="lazy" />
-                      </div>
+                <div className="flex flex-col w-full items-center justify-start">
+                  {/* Icon */}
+                  <div className="flex justify-center mb-6">
+                    <div className="inline-flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-white/15 to-white/5 p-4 shadow-lg">
+                      <img src={item.icon} alt={`${item.language} logo`} className="h-full w-full object-contain" loading="lazy" />
                     </div>
-
-                    {/* Title */}
-                    <h3 className="text-lg font-bold uppercase tracking-wider text-white sm:text-xl text-center">
-                      {item.language}
-                    </h3>
-
-                    {/* Description */}
-                    {item.description && (
-                      <p className="mt-4 text-sm leading-relaxed text-zinc-300 text-center">
-                        {item.description}
-                      </p>
-                    )}
                   </div>
 
-                  {/* Framework Tags Summary */}
+                  {/* Title */}
+                  <h3 className="text-lg font-bold uppercase tracking-wider text-white sm:text-xl text-center">
+                    {item.language}
+                  </h3>
+
+                  {/* Description */}
+                  {item.description && (
+                    <p className="mt-4 text-sm leading-relaxed text-zinc-300 text-center">
+                      {item.description}
+                    </p>
+                  )}
+
+                  {/* Framework Tags Summary - Placed DIRECTLY below description */}
                   {item.frameworks && (
-                    <div className="mt-6 flex flex-wrap gap-2 justify-center">
+                    <div className="mt-6 flex flex-wrap gap-2 justify-center w-full">
                       {item.frameworks.map((framework, fIdx) => (
                         <span
                           key={fIdx}
-                          className="inline-block rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/30"
+                          className="inline-block rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/30 transition duration-200 hover:bg-blue-400/20"
                         >
                           {framework.name}
                         </span>
@@ -79,18 +77,18 @@ export function Skills({ items }) {
                     Niveau : {item.language}
                   </h3>
                   
-                  <div className="space-y-4 overflow-y-auto max-h-[240px] pr-1 custom-scrollbar">
+                  <div className="space-y-4 overflow-y-auto max-h-[260px] pr-1 custom-scrollbar w-full">
                     {item.frameworks?.map((framework, fIdx) => {
-                      const level = framework.level || 70 // Fallback to 70% if missing
+                      const level = framework.level || 70
                       
                       return (
-                        <div key={fIdx} className="space-y-1.5">
+                        <div key={fIdx} className="space-y-1.5 w-full">
                           <div className="flex justify-between items-center text-xs">
                             <span className="font-medium text-white">{framework.name}</span>
                             <span className="text-blue-300 font-mono font-bold">{level}%</span>
                           </div>
                           
-                          {/* Visual Progress Bar directly matches the level value now */}
+                          {/* Visual Progress Bar */}
                           <div className="h-2 w-full bg-zinc-800/80 rounded-full overflow-hidden ring-1 ring-white/5">
                             <div 
                               className="h-full bg-gradient-to-r from-blue-500 to-indigo-400 rounded-full transition-all duration-500 ease-out"

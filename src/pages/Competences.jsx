@@ -127,17 +127,17 @@ const languagesAndFrameworks = [
         tags: ['Utility-first', 'Responsive', 'Dark Mode'],
         level: 95
       },
-      {
-        name: 'HTML5 & CSS3',
-        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-        tags: ['Semantic', 'Standards', 'Responsive'],
-        level: 95
-      },
       { 
         name: 'Bootstrap',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
         tags: ['CSS Framework', 'Responsive', 'Components'],
         level: 80
+      },
+      {
+        name: 'HTML5 & CSS3',
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+        tags: ['Semantic', 'Standards', 'Responsive'],
+        level: 95
       },
       {
         name: 'Shadcn UI',

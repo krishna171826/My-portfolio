@@ -1,4 +1,4 @@
-export function ProjectCard({ image, title, description, githubUrl, demoUrl, status, competences = [], tools = [] }) {
+export function ProjectCard({ image, title, description, githubUrl, demoUrl, status, competences = [], conception = [], tools = [] }) {
   const hasGithubUrl = Boolean(githubUrl && githubUrl.trim())
   const hasDemoUrl = Boolean(demoUrl && demoUrl.trim())
   const hasStatus = Boolean(status && status.trim())
@@ -81,32 +81,53 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
         ) : null}
 
         <div className="mt-6 space-y-3">
-          <div>
-            <ul className="flex flex-wrap justify-center gap-2">
-              {competences.map((item) => (
-                <li
-                  key={`${title}-competence-${item}`}
-                  className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Ligne 1 : Compétences Techniques (Bleu) */}
+          {competences.length > 0 && (
+            <div>
+              <ul className="flex flex-wrap justify-center gap-2">
+                {competences.map((item) => (
+                  <li
+                    key={`${title}-competence-${item}`}
+                    className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div>
-  
-            <ul className="flex flex-wrap justify-center gap-2">
-              {tools.map((item) => (
-                <li
-                  key={`${title}-tool-${item}`}
-                  className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Ligne 2 : Conception, Gestion & Réseaux (Vert Émeraude) */}
+          {conception.length > 0 && (
+            <div>
+              <ul className="flex flex-wrap justify-center gap-2">
+                {conception.map((item) => (
+                  <li
+                    key={`${title}-conception-${item}`}
+                    className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[11px] text-emerald-300 font-mono"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Ligne 3 : Outils complémentaires (Optionnel) */}
+          {tools.length > 0 && (
+            <div>
+              <ul className="flex flex-wrap justify-center gap-2">
+                {tools.map((item) => (
+                  <li
+                    key={`${title}-tool-${item}`}
+                    className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </article>

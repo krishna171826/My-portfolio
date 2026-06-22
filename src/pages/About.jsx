@@ -46,7 +46,9 @@ const experienceItems = [
     date: 'Depuis 2025',
     company: 'Amour de Dieu',
     location: 'Sevran, France',
-    points: ['Responsable IT de l’association Amour de Dieu.'],
+    points: ['Responsable IT de l’association Amour de Dieu.',
+      'Répondre aux besoins informatiques de l’association.',
+    ],
   },
   {
     title: 'Préparation des dalles d’exposition - Job d’été',
@@ -70,8 +72,8 @@ export default function About() {
         
         {/* About Me Section */}
         <section id="about" className="w-full max-w-6xl pt-4 text-left md:pt-10">
-          <h1 className="text-center font-mono text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
-            About Me
+          <h1 className="text-center  text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
+            A propos de <span className="text-slate-300">moi</span>
           </h1>
 
           <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)] lg:gap-12">

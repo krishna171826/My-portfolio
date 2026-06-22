@@ -7,7 +7,6 @@ import amourDeDieuImage from '../assets/amour-de-dieu.jpg'
 import maisonConnecteeImage from '../assets/maison_connectee.jpg'
 import voitureElectriqueImage from '../assets/voiture_ele.jpg'
 
-
 const projects = [
   {
     title: 'To-do App',
@@ -17,7 +16,8 @@ const projects = [
     demoUrl: 'https://todo.sureshgopi.me/',
     status: 'Active',
     image: mernTodoImage,
-    competences: ['React', 'Node.js', 'Express', 'MongoDB', 'Typescript', 'Taliwind CSS', 'DiasyUI '],
+    competences: ['React', 'Node.js', 'Express', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'DaisyUI'],
+    conception: ["Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
   },
   {
     title: 'Amour De Dieu',
@@ -27,7 +27,8 @@ const projects = [
     demoUrl: 'https://beta.amour-de-dieu.org/',
     status: 'Active',
     image: amourDeDieuImage,
-    competences: ['Nest.js','Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
+    competences: ['Nest.js', 'Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
+    conception: ['Conduire un projet', "Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
   },
   {
     title: 'Real-Time App',
@@ -38,8 +39,9 @@ const projects = [
     status: 'Terminé',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
+    conception: ['Conduire un projet', "Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
   },
-    {
+  {
     title: 'Voiture Électrique',
     description:
       'Lors de ma dernière année en STI2D, nous avons réalisé une voiture électrique à l’aide d’Arduino et de SolidWorks dans le cadre de mon projet de fin d’année.',
@@ -47,9 +49,10 @@ const projects = [
     demoUrl: '',
     status: 'Terminé',
     image: voitureElectriqueImage,
-    competences: ['Arduino', 'SolidWorks '],
+    competences: ['Arduino', 'SolidWorks'],
+    conception: ['Conduire un projet'],
   },
-    {
+  {
     title: 'Maison Connectée',
     description:
       'En première STI2D, nous avons réalisé un projet de maison connectée à l’aide d’Arduino et de SolidWorks. J’étais chargé de la conception de la maison avec SolidWorks.',
@@ -58,6 +61,7 @@ const projects = [
     status: 'Terminé',
     image: maisonConnecteeImage,
     competences: ['SolidWorks', 'Arduino'],
+    conception: ['Conduire un projet'],
   },
 ]
 
@@ -67,10 +71,7 @@ export default function Project() {
       <StarfieldBackground />
 
       <section className="relative z-10 mx-auto w-full max-w-7xl px-5 mb-20 sm:px-8">
-
-
         <section>
-
           <h2 className="mt-5 text-center font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl pt-10">
             <span className="text-slate-300">Mes Récents</span> <span className="text-white">projets</span>
           </h2>
@@ -78,8 +79,7 @@ export default function Project() {
             Voici quelques projets sur lesquels j'ai travaillé récemment.
           </p>
 
-                    <div className="flex items-center justify-center gap-4 py-15">
-            
+          <div className="flex items-center justify-center gap-4 py-15">
             <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-200" />
           </div>
 
