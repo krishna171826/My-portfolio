@@ -19,6 +19,8 @@ export function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-linear-to-b from-transparent to-white/5 backdrop-blur-xl">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:pt-8 pb-0">
+        
+        {/* 4-Column Grid Section */}
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="flex flex-col gap-4">
@@ -72,24 +74,25 @@ export function Footer() {
           {/* CTA Section */}
           <div className="flex flex-col gap-3">
             <h3 className="text-sm font-semibold text-white">Contact</h3>
-            <Link
-              to="/contact"
-              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20 w-fit"
+            <a
+              href="mailto:gopi.suresh2609@gmail.com"
+              className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20 w-fit block text-center"
             >
               Me contacter
-            </Link>
+            </a>
           </div>
-        </div>
+        </div> {/* <-- Properly closes the grid block */}
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10 mt-5 p-6 text-center">
+        <div className="border-t border-white/10 mt-12 py-6 text-center">
           <div className="flex justify-center gap-4 sm:flex-row">
             <p className="text-xs text-white/50">
               Créé par Suresh Gopi. Tous les droits réservés. © 2026
             </p>
           </div>
         </div>
-      </div>
+
+      </div> {/* <-- Properly closes the max-w-6xl container */}
     </footer>
   )
 }

@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
 const routeMap = {
-  Home: '/',
-  About: '/about',
-  Competences: '/competences',
-  Project: '/project',
+  'Accueil': '/',
+  'À propos': '/about',
+  'Compétences': '/competences',
+  'Projets': '/project',
 };
 
-const orderedNavItems = ['Home', 'About', 'Competences', 'Project'];
+const orderedNavItems = ['Accueil', 'À propos', 'Compétences', 'Projets'];
 
 export function IslandNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

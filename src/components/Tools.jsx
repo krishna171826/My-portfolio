@@ -7,7 +7,7 @@ export function Tools({ items }) {
 
       <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl pt-10 md:pt-20">
         <span className="text-white"></span>
-        <span className="text-slate-300">Tools</span>
+        <span className="text-slate-300">Outils</span>
       </h2>
 
       <div className="mx-auto mt-12 grid max-w-6xl grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-6">
