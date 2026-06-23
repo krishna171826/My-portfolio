@@ -80,7 +80,7 @@ export default function About() {
             <div>
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
-                  Actuellement en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord, 
+                  Je suis en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord, 
                   je prépare mon passage en troisième année (Bac+3). 
                 </p>
 
