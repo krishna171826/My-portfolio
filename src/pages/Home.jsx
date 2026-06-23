@@ -28,31 +28,34 @@ export default function Home() {
                 PERMETTEZ-MOI DE <span className="text-slate-300">ME PRÉSENTER</span>
               </h2>
 
-              <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
-                <p className="text-zinc-300/90">
-                  Je suis étudiant en informatique et j'apprécie transformer des idées en produits fiables et évolutifs. J'aime concevoir des applications performantes et des expériences utilisateur intuitives.
-                </p>
-                <p className="text-zinc-300/90">
-                  Je travaille avec <span className="font-semibold text-zinc-100">JavaScript</span>,{' '}
-                  <span className="font-semibold text-zinc-100">Node.js</span>,{' '}
-                  <span className="font-semibold text-zinc-100">React</span> et{' '}
-                  <span className="font-semibold text-zinc-100">Next.js</span> sur des stacks frontend
-                  et backend.
-                </p>
-                <p className="text-zinc-300/90">
-                  Mon objectif est de livrer des interfaces soignées, performantes, avec une identité
-                  visuelle moderne et épurée.
-                </p>
-              </div>
+              <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 text-justify sm:text-lg sm:leading-9">
+  <p className="text-zinc-300/90">
+    Je suis étudiant en informatique et j'apprécie transformer des idées en produits fiables et évolutifs. J'aime concevoir des applications performantes et des expériences utilisateur intuitives.
+  </p>
 
-              <div className="mt-8">
-                <a
-                  href="mailto:gopi.suresh2609@gmail.com"
-                  className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:bg-white/40 hover:border-white/50"
-                >
-                  Contacter →
-                </a>
-              </div>
+  <p className="text-zinc-300/90">
+    Je travaille avec{" "}
+    <span className="font-semibold text-zinc-100">JavaScript</span>,{" "}
+    <span className="font-semibold text-zinc-100">Node.js</span>,{" "}
+    <span className="font-semibold text-zinc-100">React</span> et{" "}
+    <span className="font-semibold text-zinc-100">Next.js</span> sur des stacks frontend
+    et backend.
+  </p>
+
+  <p className="text-zinc-300/90">
+    Mon objectif est de livrer des interfaces soignées, performantes, avec une identité
+    visuelle moderne et épurée.
+  </p>
+</div>
+
+<div className="mt-8">
+  <a
+    href="mailto:gopi.suresh2609@gmail.com"
+    className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/40"
+  >
+    Contacter →
+  </a>
+</div>
           </div>
         </section>
       </section>

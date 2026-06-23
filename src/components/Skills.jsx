@@ -1,8 +1,11 @@
 import { useState } from 'react'
 
 export function Skills({ items }) {
-  // Track which card index is selected. null means no card is clicked.
+  // Indice de la carte sélectionnée (null = aucune carte ouverte)
   const [activeCard, setActiveCard] = useState(null)
+  
+  // Onglet sélectionné pour afficher le niveau : 'BUT1' ou 'BUT2'
+  const [activeBut, setActiveBut] = useState('BUT1')
 
   return (
     <section className="text-center">
@@ -21,20 +24,29 @@ export function Skills({ items }) {
           return (
             <div
               key={idx}
-              onClick={() => setActiveCard(isSelected ? null : idx)} // Toggle view on click
-              className={`group relative rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 cursor-pointer select-none min-h-[380px] flex flex-col justify-start items-center
+              onClick={() => {
+                // On n'ouvre la carte que si elle n'est pas déjà sélectionnée
+                if (!isSelected) setActiveCard(idx)
+              }} 
+              className={`group relative rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 cursor-pointer select-none min-h-[420px] flex flex-col justify-start items-center
                 ${isSelected 
                   ? 'border-blue-500/50 bg-linear-to-br from-blue-950/30 to-zinc-900/50 shadow-[0_0_30px_rgba(59,130,246,0.2)]' 
                   : 'border-white/10 bg-linear-to-br from-white/8 to-white/3 hover:border-white/20 hover:from-white/12 hover:to-white/5 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'
                 }`}
             >
               {isSelected && (
-                <span className="absolute top-3 right-4 text-[10px] uppercase tracking-widest text-blue-400 font-semibold opacity-70">
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation() // Évite de ré-ouvrir la carte immédiatement
+                    setActiveCard(null)
+                  }}
+                  className="absolute top-3 right-4 text-[10px] uppercase tracking-widest text-blue-400 font-semibold opacity-70 hover:opacity-100 transition z-20"
+                >
                   Retour ✕
-                </span>
+                </button>
               )}
 
-              {/* View 1: Standard Card Info */}
+              {/* Vue 1 : Informations standards de la carte */}
               {!isSelected ? (
                 <div className="flex flex-col w-full items-center justify-start">
                   {/* Icon */}
@@ -56,7 +68,7 @@ export function Skills({ items }) {
                     </p>
                   )}
 
-                  {/* Framework Tags Summary - Placed DIRECTLY below description */}
+                  {/* Framework Tags Summary */}
                   {item.frameworks && (
                     <div className="mt-6 flex flex-wrap gap-2 justify-center w-full">
                       {item.frameworks.map((framework, fIdx) => (
@@ -71,15 +83,46 @@ export function Skills({ items }) {
                   )}
                 </div>
               ) : (
-                /* View 2: Skill Level Matrix Bars (100% Scale) */
-                <div className="flex flex-col h-full w-full justify-start text-left pt-2">
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-blue-400 mb-6 text-center border-b border-white/5 pb-2">
+                /* Vue 2 : Matrice des niveaux (avec les onglets BUT1 / BUT2) */
+                <div 
+                  className="flex flex-col h-full w-full justify-start text-left pt-2"
+                  onClick={(e) => e.stopPropagation()} // Évite de fermer au clic sur le fond intérieur
+                >
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-blue-400 mb-4 text-center border-b border-white/5 pb-2">
                     Niveau : {item.language}
                   </h3>
+
+                  {/* Boutons d'onglets de changement de niveau */}
+                  <div className="flex justify-center gap-2 mb-6 bg-white/5 p-1 rounded-xl border border-white/10 w-full">
+                    <button
+                      onClick={() => setActiveBut('BUT1')}
+                      className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all duration-200 ${
+                        activeBut === 'BUT1'
+                          ? 'bg-blue-500 text-white shadow-md'
+                          : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      BUT 1
+                    </button>
+                    <button
+                      onClick={() => setActiveBut('BUT2')}
+                      className={`flex-1 py-1.5 text-xs font-semibold rounded-lg transition-all duration-200 ${
+                        activeBut === 'BUT2'
+                          ? 'bg-blue-500 text-white shadow-md'
+                          : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      BUT 2
+                    </button>
+                  </div>
                   
-                  <div className="space-y-4 overflow-y-auto max-h-[260px] pr-1 custom-scrollbar w-full">
+                  {/* Liste des jauges de progression */}
+                  <div className="space-y-4 overflow-y-auto max-h-[220px] pr-1 custom-scrollbar w-full">
                     {item.frameworks?.map((framework, fIdx) => {
-                      const level = framework.level || 70
+                      // Sélection de la bonne propriété de niveau en fonction de l'onglet actif
+                      const level = activeBut === 'BUT1' 
+                        ? (framework.levelBUT1 ?? 0) 
+                        : (framework.levelBUT2 ?? 0)
                       
                       return (
                         <div key={fIdx} className="space-y-1.5 w-full">

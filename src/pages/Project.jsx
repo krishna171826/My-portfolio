@@ -20,6 +20,16 @@ const projects = [
     conception: ["Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
   },
   {
+    title: 'SAE : Suive de colis',
+    description:
+      "L'objectif de ce projet était de concevoir une application web permettant d'améliorer le suivi ds colis au sein de L'IUT de Villetaneuse.L'application devait centraliser les différentes étapes du processus.",
+    githubUrl: 'https://github.com/Nostres25/suivi-colis-iutv-v2',
+    status: 'En cours',
+    image: heroImage,
+    competences: ['PHP', 'Laravel', 'Blade', 'Tailwind CSS',],
+    conception: ["Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
+  },
+  {
     title: 'Amour De Dieu',
     description:
       'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',

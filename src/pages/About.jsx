@@ -89,9 +89,7 @@ export default function About() {
                 </p>
 
                 <p className="text-zinc-300/90">
-                  Je travaille principalement avec JavaScript et TypeScript pour concevoir des applications full-stack 
-                  performantes avec React, Node.js et Nest.js. Mon objectif est de renforcer mes compétences au sein 
-                  de projets concrets et collaboratifs.
+                  J'ai choisi l'informatique parce que coder, c'est concevoir l'avenir ,c'est l'un des rares domaines où l'on peut transformer une idée abstraite en un outil concret et personnalisé, capable de changer le quotidien de milliers d'utilisateurs.
                 </p>
               </div>
             </div>
