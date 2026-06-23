@@ -13,19 +13,19 @@ const languagesAndFrameworks = [
         name: 'React',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
         tags: ['Frontend', 'Components', 'Hooks'],
-        level: 90
+        level: 65
       },
       {
         name: 'Next.js',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
         tags: ['Full-stack', 'SSR', 'API Routes'],
-        level: 85
+        level: 65
       },
       {
         name: 'Node.js',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
         tags: ['Backend', 'Runtime', 'Async'],
-        level: 80
+        level: 70
       },
       {
         name: 'Express.js',
@@ -37,7 +37,7 @@ const languagesAndFrameworks = [
         name: 'Socket.io',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
         tags: ['Realtime', 'WebSockets', 'Events'],
-        level: 65
+        level: 40
       },
     ]
   },
@@ -50,13 +50,13 @@ const languagesAndFrameworks = [
         name: 'React + TypeScript',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
         tags: ['Typed Components', 'Props', 'Strict'],
-        level: 85
+        level: 70
       },
       {
         name: 'Nest.js',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
         tags: ['Backend', 'Decorators', 'Enterprise'],
-        level: 75
+        level: 70
       }
     ]
   },
@@ -100,19 +100,19 @@ const languagesAndFrameworks = [
         name: 'MongoDB',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
         tags: ['NoSQL', 'Documents', 'Flexible'],
-        level: 85
+        level: 70
       },
       {
         name: 'PostgreSQL',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
         tags: ['SQL', 'Relationnel', 'Robust'],
-        level: 80
+        level: 70
       },
       {
         name: 'MySQLlite',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
         tags: ['SQL', 'Relationnel', 'Lightweight'],
-        level: 75
+        level: 50
       },
     ]
   },
@@ -125,7 +125,7 @@ const languagesAndFrameworks = [
         name: 'Tailwind CSS',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
         tags: ['Utility-first', 'Responsive', 'Dark Mode'],
-        level: 95
+        level: 70
       },
       { 
         name: 'Bootstrap',
@@ -143,7 +143,7 @@ const languagesAndFrameworks = [
         name: 'Shadcn UI',
         icon: 'https://shadcn.com/favicon-96x96.png',
         tags: ['Component Library', 'Tailwind-based', 'Accessible'],
-        level: 85 
+        level: 70
       },
     ]
   },
@@ -156,13 +156,13 @@ const languagesAndFrameworks = [
         name: 'Spring Boot',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
         tags: ['Backend', 'Microservices', 'Enterprise'],
-        level: 70
+        level: 60
       },
       {
         name: 'OOP',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
         tags: ['Classes', 'Heritage', 'Polymorphism'],
-        level: 80
+        level: 65
       }
     ]
   },
@@ -175,13 +175,13 @@ const languagesAndFrameworks = [
         name: 'Laravel',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
         tags: ['Framework', 'MVC', 'Web Applications'],
-        level: 75
+        level: 50
       },
       {
         name: 'Blade',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
         tags: ['Templating', 'Server-side Rendering', 'PHP-based'],
-        level: 80
+        level: 60
       }
     ]
   },
@@ -194,7 +194,7 @@ const languagesAndFrameworks = [
         name: 'Android',
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
         tags: ['Mobile', 'UI', 'Development'],
-        level: 70
+        level: 60
       },
     ]
   },
