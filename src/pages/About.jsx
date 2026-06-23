@@ -62,6 +62,25 @@ const experienceItems = [
   },
 ]
 
+// Nouvelle structure de données pour tes objectifs
+const goalItems = [
+  {
+    horizon: 'Court terme',
+    title: 'Validation du BUT 2',
+    description: 'Réussir la deuxième année du B.U.T. Informatique et consolider mes compétences fondamentales en développement et gestion de projets.',
+  },
+  {
+    horizon: 'Moyen terme',
+    title: 'BUT 3 & Certifications',
+    description: 'Valider ma troisième année de B.U.T., obtenir une certification en Machine Learning, et certifier mon niveau d’anglais avec le diplôme du TOEIC.',
+  },
+  {
+    horizon: 'Long terme',
+    title: 'Spécialisation Master & IA',
+    description: 'Poursuivre mes études en Master spécialisé dans l’Intelligence Artificielle afin de concevoir les technologies de demain.',
+  },
+]
+
 export default function About() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-transparent pt-40 text-white">
@@ -203,6 +222,43 @@ export default function About() {
 
         {/* Professional Experience Section */}
         <ProfessionalExperience items={experienceItems} />
+
+        {/* Separator 3 */}
+        <div className="flex items-center justify-center gap-4 pt-10 pb-10">
+          <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent md:w-[250px]" />
+        </div>
+
+        {/* NEW: Goals Section */}
+        <section id="goals" className="mt-6 w-full max-w-6xl text-left mb-20">
+          <div className="mb-10 flex items-center gap-3">
+            <span className="h-px w-10 bg-linear-to-r from-zinc-400 to-transparent" />
+            <h3 className="font-mono text-2xl font-medium tracking-[0.08em] text-white/90 sm:text-3xl">
+              Objectifs  <span className="text-slate-300">avenir</span>
+            </h3>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {goalItems.map((goal, index) => (
+              <div 
+                key={`${goal.title}-${index}`}
+                className="rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-md flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-xs font-mono tracking-[0.2em] uppercase text-zinc-400 block mb-2">
+                    {goal.horizon}
+                  </span>
+                  <h4 className="text-lg font-semibold text-white/95 mb-3">
+                    {goal.title}
+                  </h4>
+                  <p className="text-sm leading-6 text-zinc-300/80 font-sans">
+                    {goal.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
       </section>
 
       <Footer />

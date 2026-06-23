@@ -2,8 +2,6 @@ import { StarfieldBackground } from '../components/Background'
 import { Footer } from '../components/Footer'
 import { Link } from 'react-router-dom'
 
-
-
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-transparent text-white">
@@ -12,7 +10,7 @@ export default function Home() {
       <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-6 px-2 text-center sm:px-4 lg:px-6">
         <h1 className="max-w-5xl text-balance text-3xl font-semibold text-white/90 pt-35 sm:text-4xl md:pt-10 md:text-5xl">
           <span className="inline-block bg-linear-to-r from-zinc-200 via-slate-300 to-zinc-500 bg-size-[220%_100%] bg-clip-text font-extrabold tracking-wide text-transparent drop-shadow-[0_0_20px_rgba(226,232,240,0.35)] animate-[silverFlow_7s_linear_infinite]">
-            SURESH Gopi
+            Gopi SURESH 
           </span>
           <br />
           <p className="text-slate-300/60 text-xl md:pt-1.5">Étudiant en informatique / Développeur Full Stack</p>
@@ -29,33 +27,56 @@ export default function Home() {
               </h2>
 
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 text-justify sm:text-lg sm:leading-9">
-  <p className="text-zinc-300/90">
-    Je suis étudiant en informatique et j'apprécie transformer des idées en produits fiables et évolutifs. J'aime concevoir des applications performantes et des expériences utilisateur intuitives.
-  </p>
+                <p className="text-zinc-300/90">
+                  Je suis étudiant en informatique et j'apprécie transformer des idées en produits fiables et évolutifs. J'aime concevoir des applications performantes et des expériences utilisateur intuitives.
+                </p>
 
-  <p className="text-zinc-300/90">
-    Je travaille avec{" "}
-    <span className="font-semibold text-zinc-100">JavaScript</span>,{" "}
-    <span className="font-semibold text-zinc-100">Node.js</span>,{" "}
-    <span className="font-semibold text-zinc-100">React</span> et{" "}
-    <span className="font-semibold text-zinc-100">Next.js</span> sur des stacks frontend
-    et backend.
-  </p>
+                <p className="text-zinc-300/90">
+                  Je travaille avec{" "}
+                  <Link 
+                    to="/project" 
+                    className="font-semibold text-zinc-100 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+                  >
+                    JavaScript
+                  </Link>
+                  ,{" "}
+                  <Link 
+                    to="/project" 
+                    className="font-semibold text-zinc-100 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+                  >
+                    Node.js
+                  </Link>
+                  ,{" "}
+                  <Link 
+                    to="/project" 
+                    className="font-semibold text-zinc-100 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+                  >
+                    React
+                  </Link>{" "}
+                  et{" "}
+                  <Link 
+                    to="/project" 
+                    className="font-semibold text-zinc-100 hover:text-blue-400 transition-colors duration-200 cursor-pointer"
+                  >
+                    Next.js
+                  </Link>{" "}
+                  sur des stacks frontend et backend.
+                </p>
 
-  <p className="text-zinc-300/90">
-    Mon objectif est de livrer des interfaces soignées, performantes, avec une identité
-    visuelle moderne et épurée.
-  </p>
-</div>
+                <p className="text-zinc-300/90">
+                  Mon objectif est de livrer des interfaces soignées, performantes, avec une identité
+                  visuelle moderne et épurée.
+                </p>
+              </div>
 
-<div className="mt-8">
-  <a
-    href="mailto:gopi.suresh2609@gmail.com"
-    className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/40"
-  >
-    Contacter →
-  </a>
-</div>
+              <div className="mt-8">
+                <a
+                  href="mailto:gopi.suresh2609@gmail.com"
+                  className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/40"
+                >
+                  Contacter →
+                </a>
+              </div>
           </div>
         </section>
       </section>

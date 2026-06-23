@@ -224,18 +224,86 @@ const languagesAndFrameworks = [
 ]
 
 const tools = [
-  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-  { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
-  { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-  { name: 'Postman', icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
-  { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
-  { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
-  { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-  { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
-  { name: 'Arduino IDE', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg' },
-  { name: 'SolidWorks', icon: 'https://img.icons8.com/color/96/solidworks.png' },
-  { name: 'Bash', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' },
-  { name: 'Canva', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg' },
+  { 
+    name: 'Git', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    projects: [
+      { name: 'Suivi de colis PHP', desc: 'Versionnement du code source et travail collaboratif.' },
+      { name: 'Stage chez GOVO', desc: 'Gestion des branches et déploiement continu des fonctionnalités de la plateforme.' }
+    ]
+  },
+  { 
+    name: 'GitHub', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    projects: [
+      { name: 'Portfolio web', desc: 'Hébergement public du code et automatisation du workflow.' },
+      { name: 'Suivi de colis PHP', desc: 'Revues de code (Pull Requests) au sein de l\'équipe universitaire.' }
+    ]
+  },
+  { 
+    name: 'VS Code', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+    projects: [
+      { name: 'Projets Full stack', desc: 'IDE principal pour l\'ensemble de mes développements (React, PHP, Node.js).' }
+    ]
+  },
+  { 
+    name: 'Postman', 
+    icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    projects: [
+      { name: 'Stage chez GOVO', desc: 'Tests et validation des points de terminaison (endpoints) des API métier.' }
+    ]
+  },
+  { 
+    name: 'Figma', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+    projects: [
+      { name: 'Design Portfolio', desc: 'Conception UI/UX initiale et prototypage des composants responsifs.' }
+    ]
+  },
+  { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg', projects: [] },
+  { 
+    name: 'Docker', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    projects: [
+      { name: 'Stage chez GOVO', desc: 'Conteneurisation locale de l\'environnement de développement pour l\'équipe.' }
+    ]
+  },
+  { 
+    name: 'Android Studio', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg', 
+    projects: [
+      { name: 'Applications Mobiles BUT2', desc: 'Conception et tests d\'interfaces mobiles natives.' }
+    ] 
+  },
+  { 
+    name: 'Arduino IDE', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg',
+    projects: [
+      { name: 'Voiture Électrique Connectée', desc: 'Écriture du code embarqué pour piloter les moteurs et interpréter les capteurs.' }
+    ]
+  },
+  { 
+    name: 'SolidWorks', 
+    icon: 'https://img.icons8.com/color/96/solidworks.png',
+    projects: [
+      { name: 'Maison Connectée (STI2D)', desc: 'Modélisation CAO et assemblage structurel 3D de la maquette domotique.' }
+    ]
+  },
+  { 
+    name: 'Bash', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+    projects: [
+      { name: 'Administration Postes Linux', desc: 'Écriture de scripts d\'automatisation pour le déploiement système à l\'université.' }
+    ]
+  },
+  { 
+    name: 'Canva', 
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg', 
+    projects: [
+      { name: 'Responsable IT Amour de Dieu', desc: 'Création de visuels d\'accompagnement pour les besoins numériques de l\'association.' }
+    ] 
+  },
 ]
 
 export default function Competences() {
@@ -255,7 +323,7 @@ export default function Competences() {
         </header>
 
         <Skills items={languagesAndFrameworks} />
-        <Tools items={tools} index="02" />
+        <Tools items={tools} />
       </section>
       <Footer />
     </main>

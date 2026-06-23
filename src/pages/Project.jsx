@@ -17,7 +17,7 @@ const projects = [
     status: 'Active',
     image: mernTodoImage,
     competences: ['React', 'Node.js', 'Express', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'DaisyUI'],
-    conception: ["Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
+    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux'],
   },
   {
     title: 'SAE : Suive de colis',
@@ -27,18 +27,18 @@ const projects = [
     status: 'En cours',
     image: heroImage,
     competences: ['PHP', 'Laravel', 'Blade', 'Tailwind CSS',],
-    conception: ["Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
+    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Collaborer'],
   },
   {
     title: 'Amour De Dieu',
     description:
       'En tant que responsable IT de l’association “Amour de Dieu”, j’ai développé un site web pour répondre à leurs besoins. J’ai réalisé ce site avec Next.js, NestJS et MongoDB, et j’ai également intégré Stripe pour la gestion des dons.',
     githubUrl: '',
-    demoUrl: 'https://beta.amour-de-dieu.org/',
+    demoUrl: 'https://amour-de-dieu.org/',
     status: 'Active',
     image: amourDeDieuImage,
     competences: ['Nest.js', 'Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
-    conception: ['Conduire un projet', "Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
+    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux'],
   },
   {
     title: 'Real-Time App',
@@ -49,7 +49,7 @@ const projects = [
     status: 'Terminé',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
-    conception: ['Conduire un projet', "Réaliser une d'app", 'Optimiser des applications', 'Gérer une BD'],
+    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux', 'Collaborer'],
   },
   {
     title: 'Voiture Électrique',
@@ -60,7 +60,7 @@ const projects = [
     status: 'Terminé',
     image: voitureElectriqueImage,
     competences: ['Arduino', 'SolidWorks'],
-    conception: ['Conduire un projet'],
+    conception: ["Réaliser", 'Collaborer'],
   },
   {
     title: 'Maison Connectée',
@@ -71,7 +71,7 @@ const projects = [
     status: 'Terminé',
     image: maisonConnecteeImage,
     competences: ['SolidWorks', 'Arduino'],
-    conception: ['Conduire un projet'],
+    conception: ["Réaliser", 'Collaborer'],
   },
 ]
 
