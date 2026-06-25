@@ -205,7 +205,7 @@ export default function Project() {
                     <ul className="flex flex-wrap gap-2">
                       {selectedProject.competences.map((item) => (
                         <a 
-                          href={`/competences?tech=${item.toLowerCase()}`} // Lien vers la page about (avec paramètre optionnel)
+                          href={'/competences'} // Lien vers la page about (avec paramètre optionnel)
                           key={`pop-${item}`} 
                           onClick={(e) => e.stopPropagation()} // Empêche la modale de se fermer
                           className="rounded-full border border-white/15 bg-blue-500/10 px-4 py-1.5 text-sm text-blue-300 transition hover:bg-blue-500/30 hover:text-white hover:scale-105 cursor-pointer inline-block"
