@@ -40,15 +40,18 @@ const experienceItems = [
       'Développement et optimisation de la plateforme métier.',
       'Sécurisation des données et respect des bonnes pratiques.',
     ],
+    details: "Durant ce stage, j'ai eu l'opportunité de travailler sur l'architecture globale de l'application. J'ai participé à la création d'API RESTful, à l'intégration de maquettes en React, et à l'optimisation des requêtes de base de données, permettant d'améliorer significativement le temps de chargement des pages.",
   },
   {
     title: 'Responsable IT - Bénévole',
     date: 'Depuis 2025',
     company: 'Amour de Dieu',
     location: 'Sevran, France',
-    points: ['Responsable IT de l’association Amour de Dieu.',
+    points: [
+      'Responsable IT de l’association Amour de Dieu.',
       'Répondre aux besoins informatiques de l’association.',
     ],
+    details: "En tant que responsable IT bénévole, je gère l'infrastructure numérique de l'association. Cela implique la maintenance du matériel informatique, la configuration du réseau local, ainsi que l'accompagnement des autres bénévoles sur l'utilisation des outils bureautiques.",
   },
   {
     title: 'Préparation des salles d’exposition - Job d’été',
@@ -59,10 +62,10 @@ const experienceItems = [
       'Utilisation de l’anglais avec les clients étrangers.',
       'Organisation des boutiques selon le planning.',
     ],
+    details: "Cette expérience m'a permis de développer mon sens de l'organisation et mon adaptabilité. J'ai pu perfectionner mon anglais en conditions réelles et apprendre à gérer la pression liée au respect des délais stricts d'installation événementielle.",
   },
 ]
 
-// Nouvelle structure de données pour tes objectifs
 const goalItems = [
   {
     horizon: 'Court terme',
@@ -81,6 +84,12 @@ const goalItems = [
   },
 ]
 
+const skills = [
+  { category: "Frontend", items: ["React", "JavaScript", "Tailwind CSS", "HTML/CSS"] },
+  { category: "Backend", items: ["PHP", "PostgreSQL", "Node.js", "API REST"] },
+  { category: "Outils & OS", items: ["Linux", "Bash", "Git", "SolidWorks", "Arduino"] },
+]
+
 export default function About() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-transparent pt-40 text-white">
@@ -91,7 +100,7 @@ export default function About() {
         
         {/* About Me Section */}
         <section id="about" className="w-full max-w-6xl pt-4 text-left md:pt-10">
-          <h1 className="text-center  text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
+          <h1 className="text-center text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
             A propos de <span className="text-slate-300">moi</span>
           </h1>
 
@@ -108,7 +117,7 @@ export default function About() {
                 </p>
 
                 <p className="text-zinc-300/90">
-                  J'ai choisi l'informatique parce que coder, c'est concevoir l'avenir ,c'est l'un des rares domaines où l'on peut transformer une idée abstraite en un outil concret et personnalisé, capable de changer le quotidien de milliers d'utilisateurs.
+                  J'ai choisi l'informatique parce que coder, c'est concevoir l'avenir, c'est l'un des rares domaines où l'on peut transformer une idée abstraite en un outil concret et personnalisé, capable de changer le quotidien de milliers d'utilisateurs.
                 </p>
               </div>
             </div>
@@ -228,12 +237,12 @@ export default function About() {
           <div className="h-px w-80 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent md:w-[250px]" />
         </div>
 
-        {/* NEW: Goals Section */}
-        <section id="goals" className="mt-6 w-full max-w-6xl text-left mb-20">
+        {/* Goals Section */}
+        <section id="goals" className="mt-6 w-full max-w-6xl text-left mb-10">
           <div className="mb-10 flex items-center gap-3">
             <span className="h-px w-10 bg-linear-to-r from-zinc-400 to-transparent" />
             <h3 className="font-mono text-2xl font-medium tracking-[0.08em] text-white/90 sm:text-3xl">
-              Objectifs  <span className="text-slate-300">avenir</span>
+              Objectifs <span className="text-slate-300">avenir</span>
             </h3>
           </div>
 
