@@ -10,7 +10,7 @@ export function Skills({ items }) {
   return (
     <section className="text-center">
       <div className="flex items-center justify-center gap-4">
-        <div className="h-px w-24 bg-linear-to-r from-transparent via-zinc-300/70 to-transparent sm:w-32" />
+        <div className="h-px w-24 bg-gradient-to-r from-transparent via-zinc-300/70 to-transparent sm:w-32" />
       </div>
 
       <h2 className="mt-5 font-mono text-3xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -30,8 +30,8 @@ export function Skills({ items }) {
               }} 
               className={`group relative rounded-3xl border p-8 backdrop-blur-md transition-all duration-300 cursor-pointer select-none min-h-[420px] flex flex-col justify-start items-center
                 ${isSelected 
-                  ? 'border-blue-500/50 bg-linear-to-br from-blue-950/30 to-zinc-900/50 shadow-[0_0_30px_rgba(59,130,246,0.2)]' 
-                  : 'border-white/10 bg-linear-to-br from-white/8 to-white/3 hover:border-white/20 hover:from-white/12 hover:to-white/5 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'
+                  ? 'border-blue-500/50 bg-gradient-to-br from-blue-950/30 to-zinc-900/50 shadow-[0_0_30px_rgba(59,130,246,0.2)]' 
+                  : 'border-white/10 bg-gradient-to-br from-white/8 to-white/3 hover:border-white/20 hover:from-white/12 hover:to-white/5 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]'
                 }`}
             >
               {isSelected && (
@@ -51,7 +51,7 @@ export function Skills({ items }) {
                 <div className="flex flex-col w-full items-center justify-start">
                   {/* Icon */}
                   <div className="flex justify-center mb-6">
-                    <div className="inline-flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-white/15 to-white/5 p-4 shadow-lg">
+                    <div className="inline-flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-white/15 to-white/5 p-4 shadow-lg">
                       <img src={item.icon} alt={`${item.language} logo`} className="h-full w-full object-contain" loading="lazy" />
                     </div>
                   </div>
@@ -72,12 +72,14 @@ export function Skills({ items }) {
                   {item.frameworks && (
                     <div className="mt-6 flex flex-wrap gap-2 justify-center w-full">
                       {item.frameworks.map((framework, fIdx) => (
-                        <span
+                        <a
                           key={fIdx}
-                          className="inline-block rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/30 transition duration-200 hover:bg-blue-400/20"
+                          href={`/project`}
+                          onClick={(e) => e.stopPropagation()} // <-- C'EST ICI LA MAGIE : Empêche la carte de se retourner au clic
+                          className="inline-block rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/30 transition duration-200 hover:bg-blue-400/30 hover:scale-105 hover:text-white cursor-pointer z-10"
                         >
                           {framework.name}
-                        </span>
+                        </a>
                       ))}
                     </div>
                   )}
