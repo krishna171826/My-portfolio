@@ -1,4 +1,4 @@
-export function ProjectCard({ image, title, description, githubUrl, demoUrl, status, competences = [], conception = [], tools = [] }) {
+export function ProjectCard({ image, title, description, githubUrl, demoUrl, status, competences = [], conception = [], tools = [], onClick }) {
   const hasGithubUrl = Boolean(githubUrl && githubUrl.trim())
   const hasDemoUrl = Boolean(demoUrl && demoUrl.trim())
   const hasStatus = Boolean(status && status.trim())
@@ -22,7 +22,8 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
 
   return (
     <article
-      className="group flex h-full flex-col rounded-3xl border border-white/15 bg-[#0c1018]/90 px-4 pb-5 pt-4 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-[#101522]/90"
+      onClick={onClick}
+      className="group flex h-full flex-col rounded-3xl border border-white/15 bg-[#0c1018]/90 px-4 pb-5 pt-4 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] transition duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-[#101522]/90 cursor-pointer"
     >
       <div className="rounded-2xl border border-white/12 bg-[#0d111a] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
         <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#151b2a]">
@@ -50,6 +51,7 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
 
       <div className="mt-6 flex flex-1 flex-col">
         <h3 className="text-center font-mono text-2xl text-white">{title}</h3>
+        
         <p className="mt-4 text-justify font-mono text-sm leading-7 text-zinc-200/90">{description}</p>
 
         {hasGithubUrl || hasDemoUrl ? (
@@ -59,7 +61,8 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
                 href={githubUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 font-mono text-sm text-zinc-100 transition hover:border-white/35 hover:bg-white/18"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 font-mono text-sm text-zinc-100 transition hover:border-white/35 hover:bg-white/18 z-10"
               >
                 <span className="text-base">⌁</span>
                 GitHub
@@ -71,7 +74,8 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
                 href={demoUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 font-mono text-sm text-zinc-100 transition hover:border-white/35 hover:bg-white/18"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-5 py-2.5 font-mono text-sm text-zinc-100 transition hover:border-white/35 hover:bg-white/18 z-10"
               >
                 <span className="text-base">▣</span>
                 Demo
@@ -81,23 +85,25 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
         ) : null}
 
         <div className="mt-6 space-y-3">
-          {/* Ligne 1 : Compétences Techniques (Bleu) */}
+          {/* Ligne 1 : Compétences Techniques (Transformées en liens) */}
           {competences.length > 0 && (
             <div>
               <ul className="flex flex-wrap justify-center gap-2">
                 {competences.map((item) => (
-                  <li
+                  <a
+                    href={`/competences?tech=${item.toLowerCase()}`} // Lien vers la page about
                     key={`${title}-competence-${item}`}
-                    className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300"
+                    onClick={(e) => e.stopPropagation()} // <-- Essentiel : évite d'ouvrir la modale au clic
+                    className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300 transition hover:bg-blue-500/30 hover:text-white hover:scale-105 cursor-pointer inline-block z-10 relative"
                   >
                     {item}
-                  </li>
+                  </a>
                 ))}
               </ul>
             </div>
           )}
 
-          {/* Ligne 2 : Conception, Gestion & Réseaux (Vert Émeraude) */}
+          {/* Ligne 2 : Conception, Gestion & Réseaux (Restent non-cliquables) */}
           {conception.length > 0 && (
             <div>
               <ul className="flex flex-wrap justify-center gap-2">
