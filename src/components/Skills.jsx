@@ -1,3 +1,4 @@
+import { Link2OffIcon } from 'lucide-react'
 import { useState } from 'react'
 
 export function Skills({ items }) {
@@ -72,14 +73,14 @@ export function Skills({ items }) {
                   {item.frameworks && (
                     <div className="mt-6 flex flex-wrap gap-2 justify-center w-full">
                       {item.frameworks.map((framework, fIdx) => (
-                        <a
+                        <Link
                           key={fIdx}
                           href={`/project`}
                           onClick={(e) => e.stopPropagation()} // <-- C'EST ICI LA MAGIE : Empêche la carte de se retourner au clic
                           className="inline-block rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300 ring-1 ring-blue-400/30 transition duration-200 hover:bg-blue-400/30 hover:scale-105 hover:text-white cursor-pointer z-10"
                         >
                           {framework.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
