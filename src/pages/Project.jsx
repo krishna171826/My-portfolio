@@ -7,6 +7,7 @@ import mernTodoImage from '../assets/mern-todo.jpg'
 import amourDeDieuImage from '../assets/amour-de-dieu.jpg'
 import maisonConnecteeImage from '../assets/maison_connectee.jpg'
 import voitureElectriqueImage from '../assets/voiture_ele.jpg'
+import { Link } from 'react-router-dom'
 
 const projects = [
   {
@@ -205,7 +206,7 @@ export default function Project() {
                     <ul className="flex flex-wrap gap-2">
                       {selectedProject.competences.map((item) => (
                         <Link 
-                          href={'/competences'} // Lien vers la page about (avec paramètre optionnel)
+                          to={'/competences'} // Lien vers la page about (avec paramètre optionnel)
                           key={`pop-${item}`} 
                           onClick={(e) => e.stopPropagation()} // Empêche la modale de se fermer
                           className="rounded-full border border-white/15 bg-blue-500/10 px-4 py-1.5 text-sm text-blue-300 transition hover:bg-blue-500/30 hover:text-white hover:scale-105 cursor-pointer inline-block"

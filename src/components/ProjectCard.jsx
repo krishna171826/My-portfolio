@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function ProjectCard({ image, title, description, githubUrl, demoUrl, status, competences = [], conception = [], tools = [], onClick }) {
   const hasGithubUrl = Boolean(githubUrl && githubUrl.trim())
   const hasDemoUrl = Boolean(demoUrl && demoUrl.trim())
@@ -91,7 +93,7 @@ export function ProjectCard({ image, title, description, githubUrl, demoUrl, sta
               <ul className="flex flex-wrap justify-center gap-2">
                 {competences.map((item) => (
                   <Link
-                    href={`/competences`} // Lien vers la page about
+                    to={`/competences`} // Lien vers la page about
                     key={`${title}-competence-${item}`}
                     onClick={(e) => e.stopPropagation()} // <-- Essentiel : évite d'ouvrir la modale au clic
                     className="rounded-full border border-white/15 bg-blue-500/10 px-3 py-1 text-[11px] text-blue-300 transition hover:bg-blue-500/30 hover:text-white hover:scale-105 cursor-pointer inline-block z-10 relative"
