@@ -16,7 +16,7 @@ export function ProfessionalExperience({ items, title = 'Expériences profession
             <article key={`${item.title}-${index}`} className="relative pl-12 lg:pl-16">
               <span className="absolute left-4 top-2 h-4 w-4 rounded-full bg-zinc-800 ring-4 ring-white/10 lg:left-2.75" />
 
-              <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6">
+              <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6 hover:bg-white/10 transition-colors duration-300">
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <h4 className="text-lg font-semibold text-white/95 sm:text-xl">{item.title}</h4>

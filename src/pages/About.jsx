@@ -141,13 +141,13 @@ export default function About() {
                   >
                     <div className={isLeft ? 'lg:pr-8' : 'lg:col-start-1'}>
                       {isLeft ? (
-                        <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6">
+                        <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6 hover:bg-white/10 transition-colors duration-300">
                           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                             <div>
                               <h4 className="text-lg font-semibold text-white/90 sm:text-xl">{item.title}</h4>
                               <p className="mt-1 text-sm text-zinc-300/80">{item.subtitle}</p>
                             </div>
-                            <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium tracking-[0.15em] text-zinc-200 uppercase">
+                            <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium tracking-[0.15em] text-zinc-200 uppercase ">
                               {item.period}
                             </span>
                           </div>
@@ -168,7 +168,7 @@ export default function About() {
 
                     <div className={isLeft ? 'lg:col-start-3' : 'lg:pl-8'}>
                       {!isLeft ? (
-                        <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6">
+                        <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-md sm:p-6 hover:bg-white/10 transition-colors duration-300">
                           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                             <div>
                               <h4 className="text-lg font-semibold text-white/90 sm:text-xl">{item.title}</h4>
