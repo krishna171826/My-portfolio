@@ -70,30 +70,25 @@ export default function About() {
 <section className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-6 px-3 sm:px-6 lg:px-10 text-center">
 
 
-        <section
-          id="about"
-          className="w-full max-w-6xl pt-4 text-left md:pt-10"
-        >
-          <h1 className="text-center font-mono text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
-            About Me
+        <section id="about" className="w-full max-w-6xl pt-4 text-left md:pt-10">
+          <h1 className="text-center text-3xl pb-10 font-medium tracking-[0.08em] text-white/90 sm:text-5xl">
+            A propos de <span className="text-slate-300">moi</span>
           </h1>
 
           <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)] lg:gap-12">
             <div>
               <div className="mt-6 space-y-5 font-mono text-base leading-8 tracking-[0.01em] text-white/80 sm:text-lg sm:leading-9">
                 <p className="text-zinc-300/90">
-                  Actuellement en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord,
-                  je prépare mon passage en troisième année (Bac+3)  une
-                  organisation qui me permet d&apos;être pleinement investi dans vos projets.
+                  Je suis en deuxième année de B.U.T. Informatique à l&apos;Université Sorbonne Paris Nord, 
+                  je prépare mon passage en troisième année (Bac+3). 
                 </p>
 
-                <p className='text-zinc-300/90'>je suis à la recherche d&apos;un contrat
-                  d&apos;alternance d&apos;un an débutant en septembre 2026. Passionné par le développement web,
-                  je propose un rythme de 2 semaines en entreprise et 2 semaines à l&apos;université</p>
+                <p className="text-zinc-300/90">
+                  Je suis à la recherche d'un contrat d'alternance d'un an débutant en septembre 2026. Je développe des applications web et souhaite mettre mes compétences au service de projets concrets au sein de votre équipe. Je propose un rythme de 2 semaines en entreprise et 2 semaines à l'université.
+                </p>
 
                 <p className="text-zinc-300/90">
-                 Je travaille principalement avec JavaScript, et je développe des applications full stack en utilisant
-                  React et Node.js, en cherchant à renforcer mes compétences au sein de projets concrets et collaboratifs.
+                  J'ai choisi l'informatique parce que coder, c'est concevoir l'avenir, c'est l'un des rares domaines où l'on peut transformer une idée abstraite en un outil concret et personnalisé, capable de changer le quotidien de milliers d'utilisateurs.
                 </p>
               </div>
             </div>
@@ -101,7 +96,7 @@ export default function About() {
             <div className="mx-auto flex w-full max-w-none items-center justify-center">
               <img
                 src={GK_logo}
-                alt="Suresh Gopi"
+                alt="Suresh Gopi Logo"
                 className="h-96 w-[min(68vw,44rem)] max-w-none object-contain sm:h-112 lg:h-128"
               />
             </div>
