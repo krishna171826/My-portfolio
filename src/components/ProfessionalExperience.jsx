@@ -20,7 +20,7 @@ export function ProfessionalExperience({ items, title = 'Expériences profession
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <h4 className="text-lg font-semibold text-white/95 sm:text-xl">{item.title}</h4>
-                    <p className="mt-1 text-sm text-zinc-300/80 sm:text-base">{item.date}</p>
+                    <p className="mt-1 text-sm text-zinc-300/80 sm:text-base©">{item.date}</p>
                   </div>
 
                   <div className="text-sm text-zinc-300/85 sm:text-right sm:text-base">
