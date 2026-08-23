@@ -22,8 +22,7 @@ const projects = [
     demoUrl: 'https://todo.sureshgopi.me/',
     status: 'Active',
     image: mernTodoImage,
-    competences: ['React', 'Node.js', 'Express', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'DaisyUI'],
-    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux'],
+    competences: ['React', 'Node.js', 'Express', 'MongoDB', 'TypeScript', 'Tailwind CSS', 'DaisyUI']
   },
   {
     title: 'SAE : Suive de colis',
@@ -37,7 +36,7 @@ const projects = [
     status: 'En cours',
     image: heroImage,
     competences: ['PHP', 'Laravel', 'Blade', 'Tailwind CSS'],
-    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Collaborer'],
+
   },
   {
     title: 'Amour De Dieu',
@@ -52,7 +51,6 @@ const projects = [
     status: 'Active',
     image: amourDeDieuImage,
     competences: ['Nest.js', 'Next.js', 'Tailwind CSS', 'Stripe API', 'Figma', 'MongoDB', 'Postman'],
-    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux'],
   },
   {
     title: 'Real-Time App',
@@ -67,7 +65,6 @@ const projects = [
     status: 'Terminé',
     image: heroImage,
     competences: ['React', 'JavaScript', 'Socket.IO', 'Nest.js'],
-    conception: ["Réaliser", 'Optimiser', 'Bases de données', 'Réseaux', 'Collaborer'],
   },
   {
     title: 'Voiture Électrique',
@@ -82,7 +79,6 @@ const projects = [
     status: 'Terminé',
     image: voitureElectriqueImage,
     competences: ['Arduino', 'SolidWorks'],
-    conception: ["Réaliser", 'Collaborer'],
   },
   {
     title: 'Maison Connectée',
@@ -97,7 +93,6 @@ const projects = [
     status: 'Terminé',
     image: maisonConnecteeImage,
     competences: ['SolidWorks', 'Arduino'],
-    conception: ["Réaliser", 'Collaborer'],
   },
 ]
 
