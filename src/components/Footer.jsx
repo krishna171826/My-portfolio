@@ -72,12 +72,12 @@ export function Footer() {
           {/* CTA Section */}
           <div className="flex flex-col gap-3">
             <h3 className="text-sm font-semibold text-white">Contact</h3>
-            <Link
-              to="/contact"
+            <a
+              href="mailto:gopi.suresh2609@gmail.com"
               className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20 w-fit"
             >
               Me contacter
-            </Link>
+            </a>
           </div>
         </div>
 

@@ -48,12 +48,12 @@ export default function Home() {
               </div>
 
               <div className="mt-8">
-                <Link
-                  to="/contact"
+                <a
+                  href="mailto:gopi.suresh2609@gmail.com"
                   className="inline-block rounded-full border border-white/20 bg-white/10 px-6 py-3 font-mono text-sm font-medium text-white transition hover:bg-white/40 hover:border-white/50"
                 >
                   Contacter →
-                </Link>
+                </a>
               </div>
           </div>
         </section>
